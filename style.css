@@ -457,7 +457,7 @@
     opacity:1;
     cursor:pointer;
     translate:0 -70px;
-    animation: 3s solution_move 1.2s linear infinite forwards;
+    animation: 3s solution_move .7s linear infinite forwards;
 
   }
 
