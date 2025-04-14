@@ -2,8 +2,9 @@
 
 .content_section {
     background-image:url("../images/detail_processfusion/detail_solution_processfusion_main_background.png");
-    background-size:cover;
+    background-size:contain;
     background-repeat: no-repeat;
+    background-position:center;
     opacity: 1;
 }
 
@@ -152,12 +153,18 @@
     justify-content: center;
 }
 
+.detail_footer .footer_contact_box .footer_contact_container {
+    display:flex;
+    flex-direction: row;
+}
+
 .detail_footer .footer_contact_box h4 {
     font-size:1.3rem;
 }
 
 .detail_footer .footer_contact_box div.contact_phone {
     display:flex;
+    padding-left:10px;
 }
 
 .detail_footer .footer_contact_box div.contact_phone svg {
@@ -167,6 +174,7 @@
 
 .detail_footer .footer_contact_box div.contact_mail {
     display:flex;
+    padding-left:10px;
 }
 
 .detail_footer .footer_contact_box div.contact_mail svg {
@@ -176,5 +184,4 @@
 
 .detail_footer .footer_contact_box p {
     line-height: 26px;
-    padding-left:5px;
 }

@@ -180,7 +180,7 @@
   }
 
   .header_section .navbar:hover .logo_section .logo_box .logo_img {
-    background-image:url(resources/images/Ziewise\ symbol_Black.png)
+    background-image:url(resources/images/ziewise_logo_after.png);
   }
 
   .header_section .logo {
@@ -417,6 +417,8 @@
     display:flex;
     flex:1;
     flex-direction:column;
+    color:#fff;
+    text-decoration: none;
   }
 
   .item_container .img_box {
@@ -474,7 +476,7 @@
   }
 
   .box_item:nth-child(1):hover .item_container {
-    background-image:url(resources/images/idc_solution_background_2.png);
+    background-image:url(resources/images/idc_solution_background.png);
     background-size:cover;
   }
 
