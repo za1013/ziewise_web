@@ -34,6 +34,10 @@
     text-decoration: none;
   }
 
+  a:link {
+    color:#fff;
+  }
+
   a:visited {
     color:#000;
   }
@@ -134,6 +138,10 @@
     display:flex;
     height:100vh;
     flex-direction:column;
+  
+  }
+
+  .header_section {
     background:black;
     color:#fff;
   }
@@ -149,6 +157,10 @@
 
   .header_section .navbar:hover {
     background:#f6f6f6;
+    color:#000;
+  }
+
+  .header_section .navbar:hover a {
     color:#000;
   }
   
@@ -227,6 +239,7 @@
     font-size:1.125rem;
     font-weight: bold;
     transition:all .3s;
+    color:#fff;
   }
 
   .header_section .navbar_list .nav_item a:hover {
@@ -348,6 +361,8 @@
     display:flex;
     flex:1;
     flex-direction:column;
+    background:black;
+    color:#fff;
   }
 
   .content_section .text_content_section {
@@ -517,4 +532,19 @@
   .box_item:nth-child(4):hover .item_container {
     background-image:url(resources/images/PF360_solution_background.png);
     background-size:cover;
+  }
+
+
+
+
+
+
+  /* Event Style */
+  .header_section .navbar:hover {
+    background:#f6f6f6;
+    color:#000;
+  }
+
+  .header_section .navbar:hover a {
+    color:#000;
   }

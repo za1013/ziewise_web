@@ -1,0 +1,131 @@
+* {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+
+.content_section {
+    scroll-behavior: smooth;
+    overflow:auto;
+    background: none;
+}
+
+
+.content_background {
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index:-1;
+    opacity: 1;
+    top:0;
+    left:0;
+    opacity: .9;
+}
+
+.content_background_first {
+    background-image: url(../images/about_business/about_business_background.jpg);
+}
+
+.content_background_second {
+    background-image: url(../images/about_business/about_business_background2.jpg);
+}
+
+.content_background_thrid {
+    background-image: url(../images/about_business/about_business_background3.jpg);
+}
+
+.content_background_forth {
+    background-image: url(../images/about_business/about_business_background4.jpg);
+}
+
+.content_body {
+    flex:1;
+    display:flex;
+    flex-direction: row;
+}
+
+.main_text_box {
+    width: 45%;
+    height:120%;
+    max-height:2200px;
+    position:relative;
+    overflow-y: auto;
+}
+
+.main_text_box #main_text {
+    position:sticky;
+    top:50%;
+    text-align: left;
+    padding-left:100px;
+}
+
+.main_text_box #main_text h2.title_text {
+    font-size:2.5rem;
+}
+
+.main_text_box #main_text p.sub_text {
+    font-size:1.5rem;
+}
+
+ul.item_list {
+    list-style: none;
+    padding: 0;
+    width:55%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:200px 100px;
+}
+
+ul.item_list li.item_box {
+    height: 450px;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+ul.item_list li.item_box:nth-child(even) {
+    margin-top:450px;
+}
+
+ul.item_list li.item_box .item_img {
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+ul.item_list li.item_box:nth-child(1) .item_img {
+    background-image:url(../images/about_business/about_business_background.jpg)
+}
+
+ul.item_list li.item_box:nth-child(2) .item_img {
+    background-image:url(../images/about_business/about_business_background2.jpg)
+
+}
+
+ul.item_list li.item_box:nth-child(3) .item_img {
+    background-image:url(../images/about_business/about_business_background3.jpg)
+
+}
+
+ul.item_list li.item_box:nth-child(4) .item_img {
+    background-image:url(../images/about_business/about_business_background4.jpg)
+
+}
+
+ul.item_list li.item_box .item_text_box {
+    height: 55%;
+    padding-top:2rem;
+    padding-left:1rem;
+}
+
+ul.item_list li.item_box .item_text_box h2 {
+    font-size:1.75rem;
+}

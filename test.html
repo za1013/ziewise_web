@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixed Background Scroll</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .background {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="content-wrapper">
+    <div class="section">
+      <div>Section 1</div>
+    </div>
+    <div class="section">
+      <div>Section 2</div>
+    </div>
+    <div class="section">
+      <div>Section 3</div>
+    </div>
+  </div>
+</body>
+</html>
