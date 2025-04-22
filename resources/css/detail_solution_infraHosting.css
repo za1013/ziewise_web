@@ -1,3 +1,17 @@
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+}
+
 .content_section ul.item_list {
     list-style: none;
     padding: 0;
@@ -41,9 +55,12 @@
 .content_section ul.item_list li.item_box .text_box h3.item_title {
     color:#fff;
     font-size:2rem;
+    animation:textAnimation 1.2s ease-out forwards;
+    
 }
 
 .content_section ul.item_list li.item_box .text_box p.item_text {
     font-size:1rem;
     color:#fff;
+    animation:textAnimation 1.2s ease-out forwards;
 }
