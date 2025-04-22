@@ -67,7 +67,7 @@
                                                         <a>Zabbix 모니터링</a>
                                                     </li>
                                                     <li class="sub_item">
-                                                        <a>서버호스팅&코로케이션</a>
+                                                        <a href="detail_solution_infraHosting.html">서버호스팅&코로케이션</a>
                                                     </li>
                                                     <li class="sub_item">
                                                         <a>IT 인프라 구축</a>
@@ -100,21 +100,21 @@
                     <h1>Ziewise의 엔터프라이즈급 IT 솔루션</h1>
                     <p>기업의 디지털 인프라를 강화하고 보안을 유지하는 데 필요한 모든 솔루션을 제공합니다.</p>
                     <div class="btn-box">
-                        <a class="btn">More Details</a>
+                        <a class="btn" href="about_business.html">More Details</a>
                     </div>
                 </div>
             </div>
             <div class="box_content_section">
                 <ul class="box_list">
                     <li class="box_item">
-                        <div class="item_container">
+                        <a class="item_container" href="detail_solution_infraHosting.html">
                             <div class="img_box">
                                 
                             </div>
                             <div class="solution_text_box">
                                 <h2>IT 인프라 호스팅</h2>
                             </div>
-                        </div>
+                        </a>
                     </li>
                     <li class="box_item">
                         <a class="item_container" href="detail_solution_VPC.html">
@@ -151,7 +151,37 @@
         </div>
     </div>
     <div class="inqueryBox">
+        <div class="inquery_container" id="inquery_container">
+            <div class="inquery_header">
+                <h3>견적 문의</h3>
+                <svg id="close_inquery_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>                  
+            </div>
+            <form action="">
+                <div class="field_box">
+                    <label for="name" class="form_label">성함</label>
+                    <input type="text" name="name" id="name" placeholder="Name" class="form_input">
+                </div>
+                <div class="field_box">
+                    <label for="company" class="form_label">회사명</label>
+                    <input type="text" name="company" id="company" placeholder="Company Name" class="form_input">
+                </div>
+                <div class="field_box">
+                    <label for="email" class="form_label">메일 주소</label>
+                    <input type="text" name="email" id="email" placeholder="example@gmail.com" class="form_input">
+                </div>
+                <div class="field_box">
+                    <label for="message" class="form_label">문의 내용</label>
+                    <textarea type="text" name="message" id="message" placeholder="문의 내용을 작성해주세요." class="form_textarea"></textarea>
+                </div>
+                <button class="form_submit">문의하기</button>
+            </form>
+        </div>
+        <div class="inquery_icon" id="inquery_icon">
 
+        </div>
     </div>
+    <script type="text/javascript" src="resources/js/inquery.js"></script>
 </body>
 </html>
