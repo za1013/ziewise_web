@@ -88,23 +88,7 @@
     animation:scaleUpDownText 1.2s ease-out forwards;
     transform: scale(0);
   }
-
-  .content_section .text_content_section .text_box .btn-box .btn {
-    background-color:#2c7873;
-    display:inline-block;
-    padding:10px 15px;
-    color:#fff;
-    border-radius: 0;
-    transition: all .3s;
-    border:1px solid #2c7873;
-    cursor:pointer;
-  }
-
-  .content_section .text_content_section .text_box .btn-box .btn:hover {
-    background-color:transparent;
-    color:#2c7873;
-  }
-
+  
   .content_section .box_content_section {
     flex:0 0 45%;
   }
