@@ -426,13 +426,13 @@ footer {
       }
     }
 
-    
+
     .catalog_box {
-      width:90px;
-      height:90px;
+      width:100px;
+      height:100px;
       position:fixed;
       bottom:520px;
-      right:15px;
+      right:10px;
       background-image:url(../images/main_page/catalog_icon.png);
       background-position:center;
       background-repeat: no-repeat;
