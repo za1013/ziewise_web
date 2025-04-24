@@ -1,5 +1,6 @@
 let isOpenInquqeryContainer = false;
 let isOpenSuccessBox = false;
+let isSendingMail = false;
 
 const inqueryIcon = document.getElementById("inquery_icon");
 const inqueryBox = document.getElementById("inquery_container");
@@ -22,18 +23,25 @@ const messageField = inqueryForm.getElementsByClassName("form_input")[3];
 inqueryForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  emailjs.sendForm("service_usbcjqa", "template_z2buh58", "#inqueryForm").then(
-    (res) => {
-      inqueryForm.reset();
-      if (!isOpenSuccessBox) {
-        successInfoBox.classList.add("open_success_info_box");
-        isOpenSuccessBox = true;
-      }
-    },
-    (err) => {
-      console.log("Failure of sending mail.", err);
-    }
-  );
+  if (!isSendingMail) {
+    isSendingMail = true;
+    emailjs
+      .sendForm("service_usbcjqa", "template_z2buh58", "#inqueryForm")
+      .then(
+        (res) => {
+          inqueryForm.reset();
+          if (!isOpenSuccessBox) {
+            successInfoBox.classList.add("open_success_info_box");
+            isOpenSuccessBox = true;
+          }
+          isSendingMail = false;
+        },
+        (err) => {
+          console.log("Failure of sending mail.", err);
+          isSendingMail = false;
+        }
+      );
+  }
 });
 
 closeSuccessInfoBtn.addEventListener("click", (e) => {
