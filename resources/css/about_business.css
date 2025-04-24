@@ -13,6 +13,10 @@
     }
 }
 
+.main_section {
+    height: auto!important;
+  }
+
 .content_section {
     scroll-behavior: smooth;
     overflow:auto;
@@ -27,7 +31,7 @@
     width: 100vw;
     z-index:-1;
     opacity: 1;
-    top:57px;
+    top:0;
     left:0;
     bottom: 0;
     right:0;
@@ -59,14 +63,17 @@
     flex:1;
     display:flex;
     flex-direction: row;
+    justify-content:end;
 }
 
 .main_text_box {
     width: 45%;
     height:120%;
     max-height:2200px;
-    position:relative;
+    position:fixed;
     overflow-y: auto;
+    left:0;
+    z-index: 0;
 }
 
 .main_text_box #main_text {

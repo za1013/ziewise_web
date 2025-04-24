@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>(주)지와이즈</title>
+    <link href="resources/css/default.css" rel="stylesheet" />
+    <link href="resources/css/header.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="resources/images/ziewise_logo.ico" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <div class="main_section">
@@ -67,13 +71,10 @@
                                                         <a>Zabbix 모니터링</a>
                                                     </li>
                                                     <li class="sub_item">
-                                                        <a href="detail_solution_infraHosting.html">서버호스팅&코로케이션</a>
+                                                        <a href="detail_solution_infraHosting.html">IT 인프라 호스팅</a>
                                                     </li>
                                                     <li class="sub_item">
                                                         <a>IT 인프라 구축</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a>DR</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -159,30 +160,62 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg>                  
             </div>
-            <form action="">
+            <form id="inqueryForm">
                 <div class="field_box">
                     <label for="name" class="form_label">성함</label>
-                    <input type="text" name="name" id="name" placeholder="Name" class="form_input">
+                    <input required type="text" name="name" id="name" placeholder="Name" class="form_input">
                 </div>
                 <div class="field_box">
                     <label for="company" class="form_label">회사명</label>
-                    <input type="text" name="company" id="company" placeholder="Company Name" class="form_input">
+                    <input required type="text" name="company" id="company" placeholder="Company Name" class="form_input">
                 </div>
                 <div class="field_box">
                     <label for="email" class="form_label">메일 주소</label>
-                    <input type="text" name="email" id="email" placeholder="example@gmail.com" class="form_input">
+                    <input required type="email" name="email" id="email" placeholder="example@gmail.com" class="form_input">
                 </div>
                 <div class="field_box">
                     <label for="message" class="form_label">문의 내용</label>
-                    <textarea type="text" name="message" id="message" placeholder="문의 내용을 작성해주세요." class="form_textarea"></textarea>
+                    <textarea required type="text" name="message" id="message" placeholder="문의 내용을 작성해주세요." class="form_textarea"></textarea>
                 </div>
-                <button class="form_submit">문의하기</button>
+                <input  type="submit" class="form_submit"></input>
             </form>
+            <div class="success_info_box" id="success_info_box">
+                <div class="success_info_header">
+                    <svg id="close_success_info_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div class="success_info_body">
+                    <svg width="800px" height="800px" viewBox="0 0 117 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                            <g fill-rule="nonzero" id="correct">
+                                <path d="M34.5,55.1 C32.9,53.5 30.3,53.5 28.7,55.1 C27.1,56.7 27.1,59.3 28.7,60.9 L47.6,79.8 C48.4,80.6 49.4,81 50.5,81 C50.6,81 50.6,81 50.7,81 C51.8,80.9 52.9,80.4 53.7,79.5 L101,22.8 C102.4,21.1 102.2,18.5 100.5,17 C98.8,15.6 96.2,15.8 94.7,17.5 L50.2,70.8 L34.5,55.1 Z" fill="#17AB13" id="Shape"/>
+                                <path d="M89.1,9.3 C66.1,-5.1 36.6,-1.7 17.4,17.5 C-5.2,40.1 -5.2,77 17.4,99.6 C28.7,110.9 43.6,116.6 58.4,116.6 C73.2,116.6 88.1,110.9 99.4,99.6 C118.7,80.3 122,50.7 107.5,27.7 C106.3,25.8 103.8,25.2 101.9,26.4 C100,27.6 99.4,30.1 100.6,32 C113.1,51.8 110.2,77.2 93.6,93.8 C74.2,113.2 42.5,113.2 23.1,93.8 C3.7,74.4 3.7,42.7 23.1,23.3 C39.7,6.8 65,3.9 84.8,16.2 C86.7,17.4 89.2,16.8 90.4,14.9 C91.6,13 91,10.5 89.1,9.3 Z" fill="#4A4A4A" id="Shape"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <h4>문의 완료</h4>
+                    <p>문의가 성공적으로 접수되었으며, 빠른 시일내로 답변드리겠습니다.</p>
+                    <button class="close_success_info_btn" id="close_success_info_btn">메시지 닫기</button>
+                </div>
+            </div>
         </div>
         <div class="inquery_icon" id="inquery_icon">
 
         </div>
     </div>
+    <footer>
+        <div class="footer_company_info_first_box">
+            <p>지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 : 이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849</p>
+        </div>
+        <div class="footer_company_info_second_box">
+            <p>Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호</p>
+        </div>
+        <div class="footer_company_info_third_box">
+            <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
+            <p>Copyright (c) Since 2024. All rights reserved</p>
+        </div>
+    </footer>
     <script type="text/javascript" src="resources/js/inquery.js"></script>
     <script type="text/javascript" src="resources/js/main_rain_effect.js"></script>
 </body>

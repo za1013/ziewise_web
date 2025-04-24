@@ -7,6 +7,21 @@
     }
   }
 
+  .main_section {
+    display:flex;
+    height:100vh;
+    flex-direction:column;
+  
+  }
+
+  .content_section {
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    background:black;
+    color:#fff;
+  }
+
 .content_section {
     justify-content: center;
     background:#f9fafb;
@@ -152,9 +167,81 @@
 
 .content_body_left_box {
     background-color:#032f55;
-    flex:1;
+    flex:5;
     border-radius: 30px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
 }
+
+.content_body_left_box h4 {
+    color:#fff;
+    font-size:2rem;
+    font-weight: bold;
+}
+
+.content_body_left_btn_box {
+    flex:1;
+    padding-top:10px;
+    display:flex;
+    justify-content: center;
+}
+
+.content_body_left_btn_box .demo_btn_box {
+    flex:1;
+    padding-right:5px;
+    display:flex;
+    max-width:150px;
+}
+
+.content_body_left_btn_box .download_btn_box {
+    flex:1;
+    padding-left:5px;
+    display:flex;
+    max-width:150px;
+}
+
+.content_body_left_btn_box .demo_btn_box button {
+    flex:1;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    border:none;
+    font-weight:bold;
+    font-size:1.25rem;
+    transition: all 0.3s ease 0s;
+    color:#fff;
+    background-color:#0dbdb3;
+    cursor:pointer;
+}
+
+.content_body_left_btn_box .demo_btn_box button:hover {
+    color:rgb(13, 189, 179);
+    background-color:#fff;
+    transform: translateY(-7px);
+    box-shadow: 0px 8px 15px rgba(13, 189, 179, 0.4);
+}
+
+.content_body_left_btn_box .download_btn_box button {
+    flex:1;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    border:none;
+    font-weight:bold;
+    font-size:1.25rem;
+    transition: all 0.3s ease 0s;
+    color:#fff;
+    background-color:#4acbfe;
+    cursor:pointer;
+}
+
+.content_body_left_btn_box .download_btn_box button:hover {
+    background-color: #fff;
+    box-shadow: 0px 15px 20px rgba(74, 203, 254, 0.4);
+    color: rgb(74, 203, 254);
+    transform: translateY(-7px);
+}
+
 
 .content_body_right_section {
     display:flex;
@@ -204,7 +291,7 @@
     color:#000;
     transition: all .5s;
     font-size:1rem;
-    font-weight:700;
+    font-weight:600;
 }
 
 .content_body_right_section ul.item_list li.item_box .item_box_container:hover {

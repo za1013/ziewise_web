@@ -22,6 +22,21 @@
     }
 }
 
+.main_section {
+    display:flex;
+    height:100vh;
+    flex-direction:column;
+  
+  }
+
+  .content_section {
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    background:black;
+    color:#fff;
+  }
+
 .content_header {
     height:50%;
     display:flex;

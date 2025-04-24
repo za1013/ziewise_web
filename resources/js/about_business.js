@@ -11,7 +11,7 @@ let focusItemNum = 0;
 
 mainText.style.top = `${(window.innerHeight - 57) / 2}px`;
 
-contentSection.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
   const scrollTop = contentSection.scrollTop;
   const viewportHeight = window.innerHeight - 57;
 

@@ -12,6 +12,11 @@
     }
 }
 
+.main_section {
+    height: auto!important;
+  }
+
+
 .content_section ul.item_list {
     list-style: none;
     padding: 0;

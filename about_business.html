@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>(주)지와이즈</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="resources/css/default.css" rel="stylesheet" />
+    <link href="resources/css/header.css" rel="stylesheet" />
     <link href="resources/css/about_business.css" rel="stylesheet" />
     <link rel="icon" href="resources/images/ziewise_logo.ico" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <div class="main_section">
@@ -149,31 +152,44 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg>                  
             </div>
-            <form action="">
+            <form id="inqueryForm" action="">
                 <div class="field_box">
                     <label for="name" class="form_label">성함</label>
-                    <input type="text" name="name" id="name" placeholder="Name" class="form_input">
+                    <input required type="text" name="name" id="name" placeholder="Name" class="form_input">
                 </div>
                 <div class="field_box">
                     <label for="company" class="form_label">회사명</label>
-                    <input type="text" name="company" id="company" placeholder="Company Name" class="form_input">
+                    <input required type="text" name="company" id="company" placeholder="Company Name" class="form_input">
                 </div>
                 <div class="field_box">
                     <label for="email" class="form_label">메일 주소</label>
-                    <input type="text" name="email" id="email" placeholder="example@gmail.com" class="form_input">
+                    <input required type="text" name="email" id="email" placeholder="example@gmail.com" class="form_input">
                 </div>
                 <div class="field_box">
                     <label for="message" class="form_label">문의 내용</label>
-                    <textarea type="text" name="message" id="message" placeholder="문의 내용을 작성해주세요." class="form_textarea"></textarea>
+                    <textarea required type="text" name="message" id="message" placeholder="문의 내용을 작성해주세요." class="form_textarea"></textarea>
                 </div>
-                <button class="form_submit">문의하기</button>
+                <input  type="submit" class="form_submit"></input>
             </form>
         </div>
         <div class="inquery_icon" id="inquery_icon">
 
         </div>
     </div>
+    <footer>
+        <div class="footer_company_info_first_box">
+            <p>지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 : 이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849</p>
+        </div>
+        <div class="footer_company_info_second_box">
+            <p>Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호</p>
+        </div>
+        <div class="footer_company_info_third_box">
+            <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
+            <p>Copyright (c) Since 2024. All rights reserved</p>
+        </div>
+    </footer>
     <script type="text/javascript" src="resources/js/inquery.js"></script>
     <script  type="text/javascript" src="resources/js/about_business.js"></script>
+    <script type="text/javascript" src="resources/js/emailsend.js"></script>
 </body>
 </html>
