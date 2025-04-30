@@ -1,0 +1,116 @@
+.content_header_container {
+    display:flex;
+    flex:1;
+    flex-direction: row;
+    background:linear-gradient(90deg, rgba(0, 66, 146, 1) 0%, rgba(20, 25, 41, 1) 60%);
+}
+
+.content_header_container .content_header_left_container {
+    width: 50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.content_header_container .content_header_left_container .content_header_left_text_box {
+    display:flex;
+    flex-direction: column;
+    padding:64px;
+    padding-right:0px;
+}
+
+.content_header_left_text_box h3.banner_title {
+    font-size:2.5rem;
+    color:#fff;
+}
+
+.content_header_left_text_box p.banner_subtitle {
+    margin-top:48px;
+    font-size:1rem;
+    color:#fff;
+}
+
+.content_header_container .content_header_right_container {
+    width: 50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.content_header_container .content_header_right_container img {
+    max-width:780px;
+}
+
+
+.content_body_container {
+    width: 100%;
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background:#fff;
+}
+
+.content_body_container .content_body_box {
+    max-width:1280px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.content_body_container .content_body_box .content_body_title_container {
+    max-width: 1280px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_body_container .content_body_box .content_body_title_container h3.content_body_title {
+    color:#0275b8;
+    font-size:2rem;
+    margin-top:20px;
+}
+
+.content_body_container .content_body_box .content_body_title_container p.content_body_subtitle {
+    color:#252525;
+    margin-top:20px;
+    text-align:center;
+    font-weight: bold;
+    font-size:1.2rem;
+}
+
+.content_body_container ul.content_item_list {
+    list-style: none;
+    padding: 0;
+    max-width: 1280px;
+    width: 100%;
+    z-index: 1;
+    display:flex;
+    flex-direction: row;
+    height:300px;
+    margin-top:50px;
+    margin-bottom:70px;
+    justify-content: center;
+}
+
+.content_body_container ul.content_item_list li.content_item_box {
+    padding: 20px;
+    width: 25%;
+    max-width:250px;
+    display:flex;
+    flex-direction: column;
+    box-sizing: content-box;
+}
+
+.content_body_container ul.content_item_list li.content_item_box img.item_img {
+    width: 100%;
+    object-fit:cover;
+}
+
+.content_body_container ul.content_item_list li.content_item_box p.item_desc {
+    color:#000;
+    text-align:center;
+    margin-top:30px;
+    font-weight: bold;
+}

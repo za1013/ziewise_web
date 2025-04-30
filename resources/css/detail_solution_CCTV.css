@@ -52,7 +52,7 @@
 .content_header .content_header_box .content_header_title_box {
     display:flex;
     flex-direction: column;
-    padding-top:100px;
+    justify-content: center;
 }
 
 .content_header .content_header_box .content_header_title_box h2.content_title {
@@ -169,4 +169,85 @@
 .content_header .content_header_box .content_header_img_box .img_box img:hover {
     filter: drop-shadow(8px 8px 20px rgba(255, 255, 255, 0.5));
     transform:translateY(-8px);
+}
+
+
+
+/* Table size */
+@media screen and (max-width:1280px){
+    .content_header .content_header_box .content_header_title_box h2.content_title {
+        font-size:2rem;
+    }
+
+    .content_header .content_header_box .content_header_title_box p.content_subtitle {
+        font-size:.8rem;
+    }
+}
+
+/* Mobile size */
+@media screen and (max-width: 768px){
+
+    .content_header .content_header_box {
+        position:relative;
+        height: 500px;
+    }
+
+    .content_header .content_header_box .content_header_title_box {
+        z-index:1;
+    }
+
+
+    .content_header .content_header_box .content_header_img_box {
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        width: 100%;
+        height: 100%;
+        z-index:0;
+        padding: 0;
+    }
+
+    .content_header .content_header_box .content_header_img_box .img_box img {
+        object-fit: cover;
+    }
+
+    .content_body .content_body_box  {
+        flex-direction: column;
+    }
+
+    .content_body .content_body_box .left_box {
+        width: 100%;
+    }
+
+    .content_body .content_body_box .left_box h2.item_title {
+        font-size:1.5rem;
+    }
+
+    .content_body .content_body_box .left_box .contact_box h4 {
+        font-size:1rem;
+    }
+
+    .content_body .content_body_box .left_box .contact_box p {
+        font-size:.8rem;
+    }
+
+    .content_body .content_body_box .right_box {
+        width: 100%;
+    }
+
+    .content_body .content_body_box .right_box ul.item_list li.item_box {
+        width: 50%;
+    }
+
+    .content_body .content_body_box .right_box ul.item_list li.item_box h3 {
+        font-size:1rem;
+        margin-top:10px;
+    }
+
+    .content_body .content_body_box .right_box ul.item_list li.item_box p {
+        font-size:.8rem;
+        margin-top:10px;
+    }
 }

@@ -82,7 +82,7 @@
       width:100px;
       height:100px;
       position:fixed;
-      bottom:410px;
+      bottom:40%;
       right:10px;
     }
   
@@ -431,7 +431,8 @@ footer {
       width:100px;
       height:100px;
       position:fixed;
-      bottom:520px;
+      bottom:40%;
+      margin-bottom:100px;
       right:10px;
       background-image:url(../images/main_page/catalog_icon.png);
       background-position:center;
@@ -440,5 +441,10 @@ footer {
       cursor:pointer;
       -webkit-animation: heartbeat 5s ease-in-out infinite both;
         animation: heartbeat 5s ease-in-out infinite both;
+        display:flex;
     }
       /* end - catalog icon style */
+
+    .catalog_download_btn {
+      flex:1;
+    }

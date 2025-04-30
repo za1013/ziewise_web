@@ -1,0 +1,195 @@
+@keyframes bg_scaleOut {
+    0% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes text_up {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.main_section {
+    display:flex;
+    flex-direction:column;
+    height: 100vh;
+}
+
+.content_section {
+    flex:1;
+    position:relative;
+}
+
+.content_section .content_section_bg {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    display:flex;
+}
+
+.content_section .content_section_bg .bg_img {
+    flex:1;
+    z-index:0;
+    background-image:url("../images/detail_infraBuildUp/infra_buildUp_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .7;
+    animation:bg_scaleOut 2s ease forwards;
+}
+
+.content_section .content_body {
+    flex:1;
+    display:flex;
+    flex-direction:row;
+}
+
+.content_section .content_body .content_body_text_box {
+    padding-left:10%;
+    padding-top:240px;
+    z-index:1;
+    opacity: 0;
+    animation:text_up 1.2s ease 1.5s forwards;
+}
+
+.content_section .content_body .content_body_text_box h3.content_title {
+    font-size:3.5rem;
+}
+
+.content_section .content_body .content_body_text_box p.content_subtitle {
+    margin-top:20px;
+    font-size:1.2rem;
+}
+
+.detail_content_section {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    background-color:#000;
+}
+
+.detail_content_section .detail_content_container {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.detail_content_section .detail_content_container .detail_content_text_box {
+    margin-top: 100px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.detail_content_section .detail_content_container .detail_content_text_box h3.detail_content_title {
+    font-size:2rem;
+    color:#fff;
+}
+
+.detail_content_section .detail_content_container .detail_content_text_box p.detail_content_subtitle {
+    color:#fff;
+    text-align:center;
+    margin-top:30px;
+}
+
+
+
+.detail_content_section .detail_content_container ul.item_list {
+    list-style:none;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    margin-top:90px;
+    margin-bottom:90px;
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container {
+    width: 25%;
+    padding:10px;
+    display:flex;
+    height: 400px;
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container .item_box {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition:0.2s ease-in-out;
+    cursor:pointer;
+    position:relative;
+    justify-content: center;
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container .item_box .item_img_box {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition:0.2s ease-in-out;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container .item_box .item_text_box {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition:0.2s ease-in-out;
+    gap: 15px;
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container .item_box:hover .item_img_box {
+    filter:blur(7px);
+    transform: scale(1.04) rotate(-1deg);
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container .item_box:hover .item_text_box {
+    opacity: 1;
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container:nth-child(1) .item_box .item_img_box {
+    background-image:url(../images/detail_infraBuildUp/server.png);
+    background-color:#2E1B7F;
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container:nth-child(2) .item_box .item_img_box {
+    background-image:url(../images/detail_infraBuildUp/network_infra.png);
+    background-color:#785fde;
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container:nth-child(3) .item_box .item_img_box {
+    background-image:url(../images/detail_infraBuildUp/security.png);
+    background-color:#11232f;
+}
+
+.detail_content_section .detail_content_container ul.item_list li.item_container:nth-child(4) .item_box .item_img_box {
+    background-image:url(../images/detail_infraBuildUp/virtualization.png);
+    background-color:#555f78;
+}

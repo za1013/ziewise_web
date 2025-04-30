@@ -29,22 +29,31 @@
     height: 450px;
     display:flex;
     flex-direction: row;
+    position:relative;
 }
 
-.content_section ul.item_list li.item_box:nth-child(1) {
+.content_section ul.item_list li.item_box .item_bg {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content_section ul.item_list li.item_box:nth-child(1) .item_bg {
     background-image:url(../images/detail_infraHosting/iso27001_background.jpg);
+    background-position-x:85%;
 }
 
-.content_section ul.item_list li.item_box:nth-child(2) {
+.content_section ul.item_list li.item_box:nth-child(2) .item_bg {
     background-image:url(../images/detail_infraHosting/serverhosting.jpg);
     flex-direction: row-reverse;
 }
 
-.content_section ul.item_list li.item_box:nth-child(3) {
+.content_section ul.item_list li.item_box:nth-child(3) .item_bg {
     background-image:url(../images/detail_infraHosting/Co-Location.jpg);
+    background-position-x:85%;
 }
 
-.content_section ul.item_list li.item_box:nth-child(4) {
+.content_section ul.item_list li.item_box:nth-child(4) .item_bg {
     background-image:url(../images/detail_infraHosting/DR_background.jpg);
     flex-direction: row-reverse;
 }
@@ -68,4 +77,43 @@
     font-size:1rem;
     color:#fff;
     animation:textAnimation 1.2s ease-out forwards;
+}
+
+
+/* Table size */
+@media screen and (max-width:1280px){
+    .content_section ul.item_list li.item_box .text_box h3.item_title {
+        font-size:1.5rem;
+    }
+
+    .content_section ul.item_list li.item_box .text_box p.item_text {
+        font-size:.7rem;
+    }
+
+    .content_section ul.item_list li.item_box:nth-child(even) .item_bg {
+        background-position-x: 10%;
+    }
+}
+
+/* Mobile size */
+@media screen and (max-width: 768px){
+    .content_section ul.item_list li.item_box .text_box {
+        width: 100%;
+    }
+
+    .content_section ul.item_list li.item_box .item_bg {
+        filter:blur(1px);
+    }
+
+    .content_section ul.item_list li.item_box:nth-child(even) .item_bg {
+        background-position-x: 25%;
+    }
+
+    .content_section ul.item_list li.item_box .text_box h3.item_title {
+        font-size:1rem;
+    }
+
+    .content_section ul.item_list li.item_box .text_box p.item_text {
+        font-size:.5rem;
+    }
 }
