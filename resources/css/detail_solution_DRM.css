@@ -21,11 +21,12 @@
 }
 
 .content_first_left_box h3.first_title {
-    font-size:2.5rem;
+    font-size:5rem;
 }
 
 .content_first_left_box p.first_subtitle {
     margin-top:20px;
+    font-size:2rem;
 }
 
 .content_first_right_box {
@@ -47,7 +48,7 @@
 
 .content_second_container h3.content_second_title {
     color:#000;
-    font-size:2rem;
+    font-size:4rem;
     margin-top:80px;
     margin-bottom:30px;
 }
@@ -92,7 +93,7 @@
 }
 
 .content_second_body_box ul.item_list li.item_container .item_box h3.function_title {
-    font-size:1rem;
+    font-size:2rem;
     margin-bottom:20px;
     font-weight: bold;
 }
@@ -114,7 +115,7 @@
 }
 
 .content_thrid_title_box h3.content_thrid_title {
-    font-size:1.5rem;
+    font-size:3rem;
     margin-top:80px;
     color:#000;
 }
@@ -123,6 +124,7 @@
     margin-top:5px;
     color:#f79393;
     margin-bottom:30px;
+    font-size:1.6rem;
 }
 
 .content_thrid_body_box {
@@ -165,7 +167,7 @@
 .content_thrid_body_box ul.item_list li.item_container .item_box h3.item_title {
     margin-top:30px;
     color:#6869c9;
-    font-size:1.5rem;
+    font-size:2rem;
     font-weight: 500;
 }
 
@@ -173,13 +175,18 @@
     color:#000;
     text-align: center;
     margin-top:10px;
+    font-size:1.2rem;
 }
 
 /* Table size */
 @media screen and (max-width:1280px){
 
     .content_first_left_box h3.first_title {
-        font-size:2rem;
+        font-size:3rem;
+    }
+
+    .content_first_left_box p.first_subtitle {
+        font-size:1.6rem;
     }
 
     .content_first_left_box br.CRLF {
@@ -223,7 +230,33 @@
         padding-right:50px;
     }
 
+    .content_first_left_box h3.first_title {
+        font-size:2rem;
+    }
+
+    .content_first_left_box p.first_subtitle {
+        font-size:1.2rem;
+    }
+
+    .content_second_container h3.content_second_title {
+        font-size:3rem;
+    }
+
     .content_second_body_box ul.item_list li.item_container {
         width: 50%;
+    }
+
+    .content_thrid_title_box h3.content_thrid_title {
+        font-size:2rem;
+        text-align:center;
+    }
+
+    .content_thrid_title_box p.content_thrid_subtitle {
+        font-size:1.2rem;
+        text-align:center;
+    }
+
+    .content_second_body_box ul.item_list li.item_container .item_box h3.function_title {
+        font-size:1.5rem;
     }
 }

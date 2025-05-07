@@ -8,7 +8,8 @@
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    padding:15px 40px 0px 40px;
+    align-items: center;
+    padding:5px 40px 5px 40px;
     transition: all .3s;
     position:relative;
   }
@@ -21,7 +22,6 @@
   .header_section .navbar .logo_section {
     display:flex;
     flex:1;
-    padding-bottom:5px;
   }
 
   .header_section .navbar .logo_section .logo_container {
@@ -52,8 +52,8 @@
   .header_section .logo {
     padding-left:.75rem;
     font-weight: bold;
-    font-size:2rem;
-    line-height:2rem;
+    font-size:4rem;
+    line-height:4rem;
     color:#fff;
     transition: all .3s;
   }
@@ -66,7 +66,7 @@
   .header_section .navigation_section {
     display:flex;
     flex-basis:auto;
-    flex:1;
+    flex:2;
   }
 
   .header_section .navbar_list {
@@ -75,22 +75,22 @@
     flex-direction:row;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
+    justify-content: center;
     width:100%;
+    color:#fff;
   }
 
   .header_section .navbar_list .nav_item {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom:5px;
   }
 
   .header_section .navbar_list .nav_item a {
     padding:5px 30px;
     text-transform: uppercase;
     border-radius:5px;
-    font-size:1.125rem;
+    font-size:2rem;
     font-weight: bold;
     transition:all .3s;
     color:#fff;
@@ -154,7 +154,7 @@
   }
 
   .snap_box .snap_list .snap_item_box .snap_item h3 {
-    font-size:1.3rem;
+    font-size:2rem;
   }
 
   .snap_box .snap_list .snap_item_box .snap_item h3 a {
@@ -162,7 +162,7 @@
   }
 
   .snap_box .snap_list .snap_item_box .snap_item p {
-    font-size:.8rem;
+    font-size:1.2rem;
     color:#666666;
   }
 
@@ -175,10 +175,10 @@
   }
 
   .snap_box .snap_list .snap_item_box .snap_item .sub_snap_item_list a {
-    font-size:.8rem;
+    font-size:1.2rem;
     color:#666666;
     text-transform: none;
-    padding:0px 5px;
+    padding:0px 10px 0px 0px;
     transition: all .2s;
   }
 
@@ -187,9 +187,9 @@
   }
 
   .header_section .navbar .lang_section {
-    flex:1;
     display:flex;
     flex-direction:row-reverse;
+    flex:1;
   }
 
   .header_section .navbar .lang_section .lang_section_box {
@@ -214,3 +214,20 @@
   .header_section .navbar:hover a {
     color:#000;
   }
+
+
+  /* Table size */
+@media screen and (max-width:1280px){
+  .header_section .navbar_list .nav_item:nth-child(2) .snap_box {
+    width: 100%;
+  }
+
+  .header_section .navbar_list .nav_item a {
+    font-size:1.8rem;
+    padding:0px 20px;
+  }
+}
+
+/* Mobile size */
+@media screen and (max-width: 768px){
+}

@@ -6,7 +6,7 @@
     <title>(주)지와이즈</title>
     <link href="resources/css/default.css" rel="stylesheet" />
     <link href="resources/css/header.css" rel="stylesheet" />
-    <link href="resources/css/detail_solution_zabbix.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="resources/images/ziewise_logo.ico" />
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -93,49 +93,60 @@
             </nav>
         </header>
         <div class="content_section">
-            <div class="content_header_container">
-                <div class="content_header_left_container">
-                    <div class="content_header_left_text_box">
-                        <h3 class="banner_title">Zabbix 기반 모니터링 시스템</h3>
-                        <p class="banner_subtitle">지와이즈는 Zabbix를 활용하여, 기업 IT 인프라를 실시간 모니터링하고 <br/>관리할 수 있는 솔루션을 제공합니다.</p>
-                    </div>
+            <div class="text_content_section">
+                <div class="text_box">
+                    <h1>Ziewise의 엔터프라이즈급 IT 솔루션</h1>
+                    <p>기업의 디지털 인프라를 강화하고 보안을 유지하는 데 필요한 모든 솔루션을 제공합니다.</p>
                 </div>
-                <div class="content_header_right_container">
-                    <img src="resources/images/detail_zabbix/zabbix_main_dashboard.svg" alt="zabbix_main_dashboard" class="banner_img">
-                </div>
+                <canvas id="rain_background"></canvas>
             </div>
-            <div class="content_body_container">
-                <div class="content_body_box">
-                    <div class="content_body_title_container">
-                        <h3 class="content_body_title">강력한 모니터링</h3>
-                        <p class="content_body_subtitle">
-                            Zabbix는 서버, 네트워크 장비, Application 등 다양한 IT 자산의 상태를 실시간으로
-                            <br />
-                            모니터링하며, 사용자 정의 경고 및 알림 기능을 통해 장애를 신속하게 감지하고 대응할 수 있습니다.
-                        </p>
-                    </div>
-                    <ul class="content_item_list">
-                        <li class="content_item_box">
-                            <img src="resources/images/detail_zabbix/zabbix_dashBoard_img.png" alt="zabbix_dashboard_img" class="item_img" />
-                            <p class="item_desc">실시간 모니터링 및 대시보드</p>
-                        </li>
-                        <li class="content_item_box">
-                            <img src="resources/images/detail_zabbix/zabbix_alarm_img.png" alt="zabbix_alarm_img" class="item_img" />
-                            <p class="item_desc">사용자 정의 경고및 알림</p>
-                        </li>
-                        <li class="content_item_box">
-                            <img src="resources/images/detail_zabbix/zabbix_os_img.png" alt="zabbix_os_img" class="item_img" />
-                            <p class="item_desc">다양한 OS와 기기 호환성</p>
-                        </li>
-                        <li class="content_item_box">
-                            <img src="resources/images/detail_zabbix/zabbix_webManagement_img.png" alt="zabbix_web_img" class="item_img" />
-                            <p class="item_desc">웹 기반 인터페이스</p>
-                        </li>
-                    </ul>
-                </div>
+            <div class="box_content_section">
+                <ul class="box_list">
+                    <li class="box_item">
+                        <a class="item_container" href="detail_solution_infraHosting.html">
+                            <div class="img_box">
+                                
+                            </div>
+                            <div class="solution_text_box">
+                                <h2>IT 인프라 호스팅</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="box_item">
+                        <a class="item_container" href="detail_solution_VPC.html">
+                            <div class="img_box">
+                                
+                            </div>
+                            <div class="solution_text_box">
+                                <h2>가상 PC</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="box_item">
+                        <a class="item_container" href="detail_solution_smartCCTV.html">
+                            <div class="img_box">
+                                
+                            </div>
+                            <div class="solution_text_box">
+                                <h2>이동형 스마트 CCTV</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="box_item">
+                        <a class="item_container" href="detail_solution_PF.html">
+                            <div class="img_box">
+                                
+                            </div>
+                            <div class="solution_text_box">
+                                <h2>프린트 보안 솔루션</h2>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+
     <div class="catalog_box">
         <a class="catalog_download_btn" href="resources/files/Ziewise_main_solution_highlight.pdf" download></a>
     </div>
@@ -203,6 +214,11 @@
             <p>Copyright (c) Since 2024. All rights reserved</p>
         </div>
     </footer>
+    <div class="loading_video_box" id="loading_video_box">
+        <video id="loading_video" src="resources/images/main_page/sample_1080p.mp4" autoplay muted></video>
+    </div>
     <script type="text/javascript" src="resources/js/inquery.js"></script>
+    <script type="text/javascript" src="resources/js/main_rain_effect.js"></script>
+    <script type="text/javascript" src="resources/js/loading.js"></script>
 </body>
 </html>

@@ -81,12 +81,14 @@
   .content_section .text_content_section .text_box h1 {
     animation:scaleUpDownText 1.2s ease-out forwards;
     transform: scale(0);
+    font-size:4rem;
   }
 
   .content_section .text_content_section .text_box p {
     margin-bottom:1rem;
     animation:scaleUpDownText 1.2s ease-out forwards;
     transform: scale(0);
+    font-size:2rem;
   }
   
   .content_section .box_content_section {
@@ -147,6 +149,7 @@
 
   .content_section .box_content_section .solution_text_box h2 {
     padding-bottom:20px;
+    font-size:2rem;
   }
 
   .box_item:hover {
@@ -215,4 +218,25 @@
   .box_item:nth-child(4):hover .item_container {
     background-image:url(resources/images/main_page/PF360_solution_background.png);
     background-size:cover;
+  }
+
+
+  /* TEST */
+  .loading_video_box {
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:1000;
+  }
+
+  .loading_video_box.close_video {
+    display:none;
+  }
+
+  .loading_video_box #loading_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
