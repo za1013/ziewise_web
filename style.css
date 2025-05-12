@@ -30,6 +30,24 @@
     }
 }
 
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* animations section end */
   
   #root, #app {
@@ -229,10 +247,12 @@
     bottom:0;
     right:0;
     z-index:1000;
+    opacity: 0;
+    animation:fade_in 1s ease forwards;
   }
 
   .loading_video_box.close_video {
-    display:none;
+    animation:fade_out 1s ease forwards;
   }
 
   .loading_video_box #loading_video {
