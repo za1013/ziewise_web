@@ -56,7 +56,7 @@
 
   .main_section {
     display:flex;
-    height:100vh;
+    min-height:100vh;
     flex-direction:column;
   
   }
@@ -70,11 +70,12 @@
   }
 
   .content_section .text_content_section {
-    flex:0 0 55%;
+    flex:55;
     justify-content: center;
     display:flex;
     flex-direction:row;
     position: relative;
+    min-height:400px;
   }
 
   .content_section .text_content_section #rain_background {
@@ -100,6 +101,7 @@
     animation:scaleUpDownText 1.2s ease-out forwards;
     transform: scale(0);
     font-size:4rem;
+    transition:all .3s;
   }
 
   .content_section .text_content_section .text_box p {
@@ -107,28 +109,31 @@
     animation:scaleUpDownText 1.2s ease-out forwards;
     transform: scale(0);
     font-size:2rem;
+    transition:all .3s;
   }
   
   .content_section .box_content_section {
-    flex:0 0 45%;
+    flex:45;
+    display:flex;
   }
 
   .content_section .box_content_section .box_list {
     list-style:none;
     display:flex;
-    height:100%;
     padding:0;
     border-top:1px solid rgba(255, 255, 255, 0.2);
+    flex:1;
   }
 
   .content_section .box_content_section .box_list li.box_item {
-    flex:1;
+    width: 25%;
     border-left:1px solid rgba(255, 255, 255, 0.2);
     border-right:1px solid rgba(255, 255, 255, 0.2);
+    border-bottom:1px solid rgba(255, 255, 255, 0.2);
     overflow: visible;
     display:flex;
     flex-direction:column;
-    transition: all 1.2s;
+    /* transition: all 1.2s; */
   }
 
   .content_section .box_content_section .box_list li.box_item .item_container {
@@ -238,8 +243,6 @@
     background-size:cover;
   }
 
-
-  /* TEST */
   .loading_video_box {
     position:fixed;
     top:0;
@@ -260,3 +263,39 @@
     height: 100%;
     object-fit: cover;
   }
+
+
+/* Table size */
+@media screen and (max-width:1280px){
+  .content_section .text_content_section .text_box h1 {
+    font-size:3.5rem;
+  }
+
+  .content_section .text_content_section .text_box p {
+    font-size:1.8rem;
+  }
+}
+
+  
+/* Mobile size */
+@media screen and (max-width: 768px){
+  .content_section .text_content_section .text_box h1 {
+    font-size:2.5rem;
+  }
+
+  .content_section .text_content_section .text_box p {
+    font-size:1.4rem;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .content_section .box_content_section .box_list {
+    flex-wrap: wrap;
+    min-height:500px;
+  }
+
+  .content_section .box_content_section .box_list li.box_item {
+    width: 50%;
+    box-sizing: border-box;
+  }
+}
