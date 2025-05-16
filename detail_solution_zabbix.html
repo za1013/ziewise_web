@@ -1,208 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>(주)지와이즈</title>
     <link href="resources/css/default.css" rel="stylesheet" />
     <link href="resources/css/header.css" rel="stylesheet" />
     <link href="resources/css/detail_solution_zabbix.css" rel="stylesheet" />
     <link rel="icon" href="resources/images/ziewise_logo.ico" />
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-</head>
-<body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
     <div class="main_section">
-        <header class="header_section">
-            <nav class="navbar">
-                <div class="logo_section">
-                    <a class="logo_container" href="index.html">
-                        <div class="logo_box">
-                            <div class="logo_img"></div>
+      <header class="header_section">
+        <nav class="navbar">
+          <div class="logo_section">
+            <a class="logo_container" href="index.html">
+              <div class="logo_box">
+                <div class="logo_img"></div>
+              </div>
+              <h6 class="logo">ziewise</h6>
+            </a>
+          </div>
+          <div class="burger_box">
+            <svg id="ham" class="ham" viewBox="0 0 100 100" width="80">
+              <path
+                class="line top"
+                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+              />
+              <path class="line middle" d="m 30,50 h 40" />
+              <path
+                class="line bottom"
+                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+              />
+            </svg>
+          </div>
+          <div id="navigation_section" class="navigation_section">
+            <ul class="navbar_list">
+              <li class="nav_item">
+                <a href="about_business.html">기업소개</a>
+              </li>
+              <li class="nav_item">
+                <a>솔루션</a>
+                <div class="nav_item_snap">
+                  <div class="snap_box">
+                    <ul class="snap_list">
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_PF.html">Process Fusion</a>
+                          </h3>
+                          <p>모든 프린터에 구현가능한 보안 프린팅 솔루션</p>
                         </div>
-                        <h6 class="logo">
-                            ziewise
-                        </h6>
-                    </a>
-                </div>
-                <div class="navigation_section">
-                    <ul class="navbar_list">
-                        <li class="nav_item">
-                            <a href="about_business.html">기업소개</a>
-                        </li>
-                        <li class="nav_item">
-                            <a>솔루션</a>
-                            <div class="nav_item_snap">
-                                <div class="snap_box">
-                                    <ul class="snap_list">
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3><a href="detail_solution_PF.html">Process Fusion</a></h3>
-                                                <p>모든 프린터에 구현가능한 보안 프린팅 솔루션</p>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3><a href="detail_solution_smartCCTV.html">이동형 스마트 CCTV</a></h3>
-                                                <p>산업 재해 예방을 위한 솔루션</p>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3>SaaS 솔루션</h3>
-                                                <ul class="sub_snap_item_list">
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_DRM.html">DRM/DLP</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_VPC.html">VPC</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3>IT Infra 서비스</h3>
-                                                <ul class="sub_snap_item_list">
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_zabbix.html">Zabbix 모니터링</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_infraHosting.html">IT 인프라 호스팅</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_infraBuildUp.html">IT 인프라 구축</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav_item">
-                            <a>고객문의</a>
-                        </li>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_smartCCTV.html"
+                              >이동형 스마트 CCTV</a
+                            >
+                          </h3>
+                          <p>산업 재해 예방을 위한 솔루션</p>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>SaaS 솔루션</h3>
+                          <ul class="sub_snap_item_list">
+                            <li class="sub_item">
+                              <a href="detail_solution_DRM.html">DRM/DLP</a>
+                            </li>
+                            <li class="sub_item">
+                              <a href="detail_solution_VPC.html">VPC</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>IT Infra 서비스</h3>
+                          <ul class="sub_snap_item_list">
+                            <li class="sub_item">
+                              <a href="detail_solution_zabbix.html"
+                                >Zabbix 모니터링</a
+                              >
+                            </li>
+                            <li class="sub_item">
+                              <a href="detail_solution_infraHosting.html"
+                                >IT 인프라 호스팅</a
+                              >
+                            </li>
+                            <li class="sub_item">
+                              <a href="detail_solution_infraBuildUp.html"
+                                >IT 인프라 구축</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
                     </ul>
+                  </div>
                 </div>
-                <div class="lang_section">
-                    <div class="lang_section_box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div class="content_section">
-            <div class="content_header_container">
-                <div class="content_header_left_container">
-                    <div class="content_header_left_text_box">
-                        <h3 class="banner_title">Zabbix 기반 모니터링 시스템</h3>
-                        <p class="banner_subtitle">지와이즈는 Zabbix를 활용하여, 기업 IT 인프라를 실시간 모니터링하고 <br/>관리할 수 있는 솔루션을 제공합니다.</p>
-                    </div>
-                </div>
-                <div class="content_header_right_container">
-                    <img src="resources/images/detail_zabbix/zabbix_main_dashboard.svg" alt="zabbix_main_dashboard" class="banner_img">
-                </div>
+              </li>
+              <li class="nav_item">
+                <a href="inquery_page.html">고객문의</a>
+              </li>
+              <li class="nav_item catalog_item">
+                <a
+                  href="resources/files/Ziewise_main_solution_highlight.pdf"
+                  download
+                  >카탈로그 다운로드</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="lang_section">
+            <div class="lang_section_box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="language_icon"
+                width="42"
+                height="42"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-globe"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
             </div>
-            <div class="content_body_container">
-                <div class="content_body_box">
-                    <div class="content_body_title_container">
-                        <h3 class="content_body_title">강력한 모니터링</h3>
-                        <p class="content_body_subtitle">
-                            Zabbix는 서버, 네트워크 장비, Application 등 다양한 IT 자산의 상태를 실시간으로
-                            <br />
-                            모니터링하며, 사용자 정의 경고 및 알림 기능을 통해 장애를 신속하게 감지하고 대응할 수 있습니다.
-                        </p>
-                    </div>
-                    <ul class="content_item_list">
-                        <li class="content_item_box">
-                            <img src="resources/images/detail_zabbix/zabbix_dashBoard_img.png" alt="zabbix_dashboard_img" class="item_img" />
-                            <p class="item_desc">실시간 모니터링 및 대시보드</p>
-                        </li>
-                        <li class="content_item_box">
-                            <img src="resources/images/detail_zabbix/zabbix_alarm_img.png" alt="zabbix_alarm_img" class="item_img" />
-                            <p class="item_desc">사용자 정의 경고및 알림</p>
-                        </li>
-                        <li class="content_item_box">
-                            <img src="resources/images/detail_zabbix/zabbix_os_img.png" alt="zabbix_os_img" class="item_img" />
-                            <p class="item_desc">다양한 OS와 기기 호환성</p>
-                        </li>
-                        <li class="content_item_box">
-                            <img src="resources/images/detail_zabbix/zabbix_webManagement_img.png" alt="zabbix_web_img" class="item_img" />
-                            <p class="item_desc">웹 기반 인터페이스</p>
-                        </li>
-                    </ul>
-                </div>
+            <ul id="language_list" class="language_list">
+              <li class="language_item">KR</li>
+              <li class="language_item">EN</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content_section">
+        <div class="content_header_container">
+          <div class="content_header_left_container">
+            <div class="content_header_left_text_box">
+              <h3 class="banner_title">Zabbix 기반 모니터링 시스템</h3>
+              <p class="banner_subtitle">
+                지와이즈는 Zabbix를 활용하여, 기업 IT 인프라를 실시간
+                모니터링하고 <br />관리할 수 있는 솔루션을 제공합니다.
+              </p>
             </div>
+          </div>
+          <div class="content_header_right_container">
+            <img
+              src="resources/images/detail_zabbix/zabbix_main_dashboard.svg"
+              alt="zabbix_main_dashboard"
+              class="banner_img"
+            />
+          </div>
         </div>
-    </div>
-    <div class="catalog_box">
-        <a class="catalog_download_btn" href="resources/files/Ziewise_main_solution_highlight.pdf" download></a>
-    </div>
-    <div class="inqueryBox">
-        <div class="inquery_container" id="inquery_container">
-            <div class="inquery_header">
-                <h3>견적 문의</h3>
-                <svg id="close_inquery_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg>                  
+        <div class="content_body_container">
+          <div class="content_body_box">
+            <div class="content_body_title_container">
+              <h3 class="content_body_title">강력한 모니터링</h3>
+              <p class="content_body_subtitle">
+                Zabbix는 서버, 네트워크 장비, Application 등 다양한 IT 자산의
+                상태를 실시간으로
+                <br />
+                모니터링하며, 사용자 정의 경고 및 알림 기능을 통해 장애를
+                신속하게 감지하고 대응할 수 있습니다.
+              </p>
             </div>
-            <form id="inqueryForm">
-                <div class="field_box">
-                    <label for="name" class="form_label">성함</label>
-                    <input required type="text" name="name" id="name" placeholder="Name" class="form_input">
-                </div>
-                <div class="field_box">
-                    <label for="company" class="form_label">회사명</label>
-                    <input required type="text" name="company" id="company" placeholder="Company Name" class="form_input">
-                </div>
-                <div class="field_box">
-                    <label for="email" class="form_label">메일 주소</label>
-                    <input required type="email" name="email" id="email" placeholder="example@gmail.com" class="form_input">
-                </div>
-                <div class="field_box">
-                    <label for="message" class="form_label">문의 내용</label>
-                    <textarea required type="text" name="message" id="message" placeholder="문의 내용을 작성해주세요." class="form_textarea"></textarea>
-                </div>
-                <input  type="submit" class="form_submit"></input>
-            </form>
-            <div class="success_info_box" id="success_info_box">
-                <div class="success_info_header">
-                    <svg id="close_success_info_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
-                </div>
-                <div class="success_info_body">
-                    <svg width="800px" height="800px" viewBox="0 0 117 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
-                            <g fill-rule="nonzero" id="correct">
-                                <path d="M34.5,55.1 C32.9,53.5 30.3,53.5 28.7,55.1 C27.1,56.7 27.1,59.3 28.7,60.9 L47.6,79.8 C48.4,80.6 49.4,81 50.5,81 C50.6,81 50.6,81 50.7,81 C51.8,80.9 52.9,80.4 53.7,79.5 L101,22.8 C102.4,21.1 102.2,18.5 100.5,17 C98.8,15.6 96.2,15.8 94.7,17.5 L50.2,70.8 L34.5,55.1 Z" fill="#17AB13" id="Shape"/>
-                                <path d="M89.1,9.3 C66.1,-5.1 36.6,-1.7 17.4,17.5 C-5.2,40.1 -5.2,77 17.4,99.6 C28.7,110.9 43.6,116.6 58.4,116.6 C73.2,116.6 88.1,110.9 99.4,99.6 C118.7,80.3 122,50.7 107.5,27.7 C106.3,25.8 103.8,25.2 101.9,26.4 C100,27.6 99.4,30.1 100.6,32 C113.1,51.8 110.2,77.2 93.6,93.8 C74.2,113.2 42.5,113.2 23.1,93.8 C3.7,74.4 3.7,42.7 23.1,23.3 C39.7,6.8 65,3.9 84.8,16.2 C86.7,17.4 89.2,16.8 90.4,14.9 C91.6,13 91,10.5 89.1,9.3 Z" fill="#4A4A4A" id="Shape"/>
-                            </g>
-                        </g>
-                    </svg>
-                    <h4>문의 완료</h4>
-                    <p>문의가 성공적으로 접수되었으며, 빠른 시일내로 답변드리겠습니다.</p>
-                    <button class="close_success_info_btn" id="close_success_info_btn">메시지 닫기</button>
-                </div>
-            </div>
+            <ul class="content_item_list">
+              <li class="content_item_box">
+                <img
+                  src="resources/images/detail_zabbix/zabbix_dashBoard_img.png"
+                  alt="zabbix_dashboard_img"
+                  class="item_img"
+                />
+                <p class="item_desc">실시간 모니터링 및 대시보드</p>
+              </li>
+              <li class="content_item_box">
+                <img
+                  src="resources/images/detail_zabbix/zabbix_alarm_img.png"
+                  alt="zabbix_alarm_img"
+                  class="item_img"
+                />
+                <p class="item_desc">사용자 정의 경고및 알림</p>
+              </li>
+              <li class="content_item_box">
+                <img
+                  src="resources/images/detail_zabbix/zabbix_os_img.png"
+                  alt="zabbix_os_img"
+                  class="item_img"
+                />
+                <p class="item_desc">다양한 OS와 기기 호환성</p>
+              </li>
+              <li class="content_item_box">
+                <img
+                  src="resources/images/detail_zabbix/zabbix_webManagement_img.png"
+                  alt="zabbix_web_img"
+                  class="item_img"
+                />
+                <p class="item_desc">웹 기반 인터페이스</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="inquery_icon" id="inquery_icon">
-
-        </div>
+      </div>
     </div>
     <footer>
-        <div class="footer_company_info_first_box">
-            <p>지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 : 이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849</p>
-        </div>
-        <div class="footer_company_info_second_box">
-            <p>Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호</p>
-        </div>
-        <div class="footer_company_info_third_box">
-            <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
-            <p>Copyright (c) Since 2024. All rights reserved</p>
-        </div>
+      <div class="footer_company_info_first_box">
+        <p>
+          지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 :
+          이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849
+        </p>
+      </div>
+      <div class="footer_company_info_second_box">
+        <p>
+          Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호
+        </p>
+      </div>
+      <div class="footer_company_info_third_box">
+        <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
+        <p>Copyright (c) Since 2024. All rights reserved</p>
+      </div>
     </footer>
-    <script type="text/javascript" src="resources/js/inquery.js"></script>
-</body>
+    <script type="text/javascript" src="resources/js/header.js"></script>
+  </body>
 </html>

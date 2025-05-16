@@ -154,6 +154,10 @@
     padding:20px;
   }
 
+  .header_section .navbar_list .nav_item.catalog_item {
+    display:none;
+  }
+
   .snap_box .snap_list .snap_item_box .snap_item h3 {
     font-size:2rem;
   }
@@ -339,7 +343,7 @@
 
   .header_section .navigation_section {
     display:flex;
-    position:fixed;
+    position:absolute;
     top:50px;
     right:0px;
     height: 100vh;
@@ -363,13 +367,14 @@
   }
 
   .header_section .navbar_list .nav_item > a {
-    color:#000;
+    color:#2c7873;
     padding: 0;
     font-size:1.6rem;
     text-align:center;
     padding:5px 30px;
     border-bottom:1px solid black;
     border-radius: 0;
+    font-weight:bold;
   }
 
   .header_section .navbar_list .nav_item:nth-child(2) .nav_item_snap {
@@ -377,6 +382,10 @@
     position:inherit;
     visibility: visible;
     height: auto;
+  }
+
+  .header_section .navbar_list .nav_item:nth-child(2) > a {
+    color:black;
   }
 
   .header_section .navbar_list .nav_item:nth-child(2) .snap_box .snap_list {
@@ -402,16 +411,25 @@
     background-color:inherit;
   }
 
+  .header_section .navbar_list .nav_item.catalog_item {
+    display:flex;
+  }
+
   .snap_box .snap_list .snap_item_box .snap_item h3 a {
     font-size:1.4rem;
     text-decoration: none;
-    color:#000;
+    color:#2c7873;
+    font-weight:bold;
   }
 
   .snap_box .snap_list .snap_item_box .snap_item h3 {
     font-size:1.4rem;
     color:#000;
     text-decoration: none;
+  }
+
+  .snap_box .snap_list .snap_item_box .snap_item .sub_snap_item_list a {
+    color:#2c7873;
   }
 
   .header_section .navbar .burger_box svg.ham {

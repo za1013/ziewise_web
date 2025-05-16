@@ -280,7 +280,7 @@
 /* Mobile size */
 @media screen and (max-width: 768px){
   .content_section .text_content_section .text_box h1 {
-    font-size:2.5rem;
+    font-size:2rem;
   }
 
   .content_section .text_content_section .text_box p {

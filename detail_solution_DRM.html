@@ -1,283 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>(주)지와이즈</title>
     <link href="resources/css/default.css" rel="stylesheet" />
     <link href="resources/css/header.css" rel="stylesheet" />
     <link href="resources/css/detail_solution_DRM.css" rel="stylesheet" />
     <link rel="icon" href="resources/images/ziewise_logo.ico" />
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-</head>
-<body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
     <div class="main_section">
-        <header class="header_section">
-            <nav class="navbar">
-                <div class="logo_section">
-                    <a class="logo_container" href="index.html">
-                        <div class="logo_box">
-                            <div class="logo_img"></div>
+      <header class="header_section">
+        <nav class="navbar">
+          <div class="logo_section">
+            <a class="logo_container" href="index.html">
+              <div class="logo_box">
+                <div class="logo_img"></div>
+              </div>
+              <h6 class="logo">ziewise</h6>
+            </a>
+          </div>
+          <div class="burger_box">
+            <svg id="ham" class="ham" viewBox="0 0 100 100" width="80">
+              <path
+                class="line top"
+                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+              />
+              <path class="line middle" d="m 30,50 h 40" />
+              <path
+                class="line bottom"
+                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+              />
+            </svg>
+          </div>
+          <div id="navigation_section" class="navigation_section">
+            <ul class="navbar_list">
+              <li class="nav_item">
+                <a href="about_business.html">기업소개</a>
+              </li>
+              <li class="nav_item">
+                <a>솔루션</a>
+                <div class="nav_item_snap">
+                  <div class="snap_box">
+                    <ul class="snap_list">
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_PF.html">Process Fusion</a>
+                          </h3>
+                          <p>모든 프린터에 구현가능한 보안 프린팅 솔루션</p>
                         </div>
-                        <h6 class="logo">
-                            ziewise
-                        </h6>
-                    </a>
-                </div>
-                <div class="navigation_section">
-                    <ul class="navbar_list">
-                        <li class="nav_item">
-                            <a href="about_business.html">기업소개</a>
-                        </li>
-                        <li class="nav_item">
-                            <a>솔루션</a>
-                            <div class="nav_item_snap">
-                                <div class="snap_box">
-                                    <ul class="snap_list">
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3><a href="detail_solution_PF.html">Process Fusion</a></h3>
-                                                <p>모든 프린터에 구현가능한 보안 프린팅 솔루션</p>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3><a href="detail_solution_smartCCTV.html">이동형 스마트 CCTV</a></h3>
-                                                <p>산업 재해 예방을 위한 솔루션</p>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3>SaaS 솔루션</h3>
-                                                <ul class="sub_snap_item_list">
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_DRM.html">DRM/DLP</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_VPC.html">VPC</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3>IT Infra 서비스</h3>
-                                                <ul class="sub_snap_item_list">
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_zabbix.html">Zabbix 모니터링</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_infraHosting.html">IT 인프라 호스팅</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_infraBuildUp.html">IT 인프라 구축</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav_item">
-                            <a>고객문의</a>
-                        </li>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_smartCCTV.html"
+                              >이동형 스마트 CCTV</a
+                            >
+                          </h3>
+                          <p>산업 재해 예방을 위한 솔루션</p>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>SaaS 솔루션</h3>
+                          <ul class="sub_snap_item_list">
+                            <li class="sub_item">
+                              <a href="detail_solution_DRM.html">DRM/DLP</a>
+                            </li>
+                            <li class="sub_item">
+                              <a href="detail_solution_VPC.html">VPC</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>IT Infra 서비스</h3>
+                          <ul class="sub_snap_item_list">
+                            <li class="sub_item">
+                              <a href="detail_solution_zabbix.html"
+                                >Zabbix 모니터링</a
+                              >
+                            </li>
+                            <li class="sub_item">
+                              <a href="detail_solution_infraHosting.html"
+                                >IT 인프라 호스팅</a
+                              >
+                            </li>
+                            <li class="sub_item">
+                              <a href="detail_solution_infraBuildUp.html"
+                                >IT 인프라 구축</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
                     </ul>
+                  </div>
                 </div>
-                <div class="lang_section">
-                    <div class="lang_section_box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div class="content_section">
-            <div class="content_first_container">
-                <div class="content_first_left_box">
-                    <h3 class="first_title">DocuRay 기반 DRM / DLP 솔루션</h3>
-                    <p class="first_subtitle">DocuRay DRM은 타 솔루션과 달리 Kernel Level 에서 작동하여, <br class="CRLF"/>다른 APP과 충돌이 적고 작은 리소스로 빠르게 동작하는 효율적인 DRM 솔루션 입니다.</p>
-                </div>
-                <div class="content_first_right_box"></div>
+              </li>
+              <li class="nav_item">
+                <a href="inquery_page.html">고객문의</a>
+              </li>
+              <li class="nav_item catalog_item">
+                <a
+                  href="resources/files/Ziewise_main_solution_highlight.pdf"
+                  download
+                  >카탈로그 다운로드</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="lang_section">
+            <div class="lang_section_box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="language_icon"
+                width="42"
+                height="42"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-globe"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
             </div>
-            <div class="content_second_container">
-                <div class="content_second_title_box">
-                    <h3 class="content_second_title">DocuRay 주요 기능</h3>
-                </div>
-                <div class="content_second_body_box">
-                    <ul class="item_list">
-                        <li class="item_container">
-                            <div class="item_box">
-                                <img class="function_icon" src="resources/images/detail_drm/secured_file.svg" />
-                                <h3 class="function_title">문서 및 파일 암호화</h3>
-                            </div>
-                        </li>
-                        <li class="item_container">
-                            <div class="item_box">
-                                <img class="function_icon" src="resources/images/detail_drm/user_permission.svg" />
-                                <h3 class="function_title">유저별 승인 권한</h3>
-                            </div>
-                        </li>
-                        <li class="item_container">
-                            <div class="item_box">
-                                <img class="function_icon" src="resources/images/detail_drm/approved_file.svg" />
-                                <h3 class="function_title">승인된 파일만 반출</h3>
-                            </div>
-                        </li>
-                        <li class="item_container">
-                            <div class="item_box">
-                                <img class="function_icon" src="resources/images/detail_drm/watching_web_email.svg" />
-                                <h3 class="function_title">메일 및 웹 업로드 모니터링</h3>
-                            </div>
-                        </li>
-                        <li class="item_container">
-                            <div class="item_box">
-                                <img class="function_icon" src="resources/images/detail_drm/usb_block.svg" />
-                                <h3 class="function_title">USB 및 외부 저장 장치 제어</h3>
-                            </div>
-                        </li>
-                        <li class="item_container">
-                            <div class="item_box">
-                                <img class="function_icon" src="resources/images/detail_drm/alarm_log_icon.svg" />
-                                <h3 class="function_title">실시간 보안 이벤트 알림 및 로깅</h3>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content_thrid_container">
-                <div class="content_thrid_title_box">
-                    <h3 class="content_thrid_title">DocuRay DRM/DLP는 아래와 같은 파일에 적용 가능합니다.</h3>
-                    <p class="content_thrid_subtitle">* 아래 지원 목록에 없는 프로그램도 지원가능하도록 설정가능하니, 문의부탁드립니다.</p>
-                </div>
-                <div class="content_thrid_body_box">
-                    <ul class="item_list">
-                        <li class="item_container">
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-                                        <rect width="24" height="24" fill="white"/>
-                                        <path d="M10 1.5L12.5 4L15 6.5M10 1.5L3 1.5L3 17.5L15 17.5L15 6.5M10 1.5L10 6.5L15 6.5" stroke="#000000" stroke-linejoin="round"/>
-                                        <path d="M17 6.5L19.5 9L22 11.5M17 6.5L17 11.5L22 11.5M17 6.5L14 6.5M22 11.5L22 22.5L10 22.5L10 17.5" stroke="#000000" stroke-linejoin="round"/>
-                                        </svg>
-                                </div>
-                                <h3 class="item_title">오피스 문서</h3>
-                                <p class="item_subtitle">MS Office, HancomOffice 등 다양한 업무 문서 파일에 적용 가능합니다.</p>
-                            </div>
-                        </li>
-                        <li class="item_container">
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 48 48" id="a"><defs><style>.b{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="b" d="M29.4995,12.3739c.7719-.0965,1.5437,.4824,1.5437,1.2543h0l2.5085,23.8312c.0965,.7719-.4824,1.5437-1.2543,1.5437l-23.7347,2.5085c-.7719,.0965-1.5437-.4824-1.5437-1.2543h0l-2.5085-23.7347c-.0965-.7719,.4824-1.5437,1.2543-1.5437l23.7347-2.605Z"/><path class="b" d="M12.9045,18.9347c-1.7367,.193-3.0874,1.7367-2.8945,3.5699,.193,1.7367,1.7367,3.0874,3.5699,2.8945,1.7367-.193,3.0874-1.7367,2.8945-3.5699s-1.8332-3.0874-3.5699-2.8945h0Zm8.7799,5.596l-4.6312,5.6925c-.193,.193-.4824,.2894-.6754,.0965h0l-1.0613-.8683c-.193-.193-.5789-.0965-.6754,.0965l-5.0171,6.1749c-.193,.193-.193,.5789,.0965,.6754-.0965,.0965,.0965,.0965,.193,.0965l19.9719-2.1226c.2894,0,.4824-.2894,.4824-.5789,0-.0965-.0965-.193-.0965-.2894l-7.8151-9.0694c-.2894-.0965-.5789-.0965-.7719,.0965h0Z"/><path class="b" d="M16.2814,13.8211l.6754-6.0784c.0965-.7719,.7719-1.3508,1.5437-1.2543l23.7347,2.5085c.7719,.0965,1.3508,.7719,1.2543,1.5437h0l-2.5085,23.7347c0,.6754-.7719,1.2543-1.5437,1.2543l-6.1749-.6754"/><path class="b" d="M32.7799,29.9337l5.3065,.5789c.2894,0,.4824-.193,.5789-.4824,0-.0965,0-.193-.0965-.2894l-5.789-10.5166c-.0965-.193-.4824-.2894-.6754-.193h0l-.3859,.3859"/></svg>
-                                </div>
-                                <h3 class="item_title">이미지 파일</h3>
-                                <p class="item_subtitle">jpg, png, bmp, gif, tif, jpeg 등 다양한 이미지에도 적용 가능합니다.</p>
-                            </div>
-                        </li>
-                        <li class="item_container">
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Capa_1" width="800px" height="800px" viewBox="0 0 550.801 550.801" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M264.908,413.791h-0.369c-1.866,7.494-3.73,17.033-5.798,24.332l-7.48,26.778h27.884l-7.865-26.778    C269.027,430.64,266.78,421.285,264.908,413.791z"/>
-                                                <path d="M382.135,413.417c-6.36,0-10.479,0.564-12.92,1.128v82.562c2.436,0.559,6.37,0.559,9.924,0.559    c25.84,0.19,42.684-14.038,42.684-44.181C422.012,427.275,406.666,413.417,382.135,413.417z"/>
-                                                <path d="M475.095,131.992c-0.032-2.521-0.833-5.021-2.568-6.993L366.324,3.689c-0.021-0.035-0.053-0.045-0.084-0.077    c-0.633-0.706-1.36-1.284-2.141-1.803c-0.232-0.145-0.465-0.285-0.707-0.422c-0.686-0.367-1.393-0.665-2.131-0.886    c-0.2-0.063-0.379-0.145-0.58-0.197C359.87,0.114,359.037,0,358.203,0H97.2C85.292,0,75.6,9.693,75.6,21.601v507.6    c0,11.907,9.692,21.601,21.6,21.601H453.6c11.908,0,21.601-9.693,21.601-21.601V133.202    C475.2,132.791,475.137,132.393,475.095,131.992z M169.037,496.916c8.628,0,18.17-1.872,23.792-4.118l4.303,22.285    c-5.242,2.616-17.031,5.427-32.39,5.427c-43.63,0-66.095-27.147-66.095-63.097c0-43.068,30.705-67.025,68.903-67.025    c14.787,0,26.03,3.001,31.084,5.611l-5.801,22.649c-5.812-2.432-13.856-4.667-23.965-4.667c-22.663,0-40.268,13.652-40.268,41.739    C128.596,481.001,143.585,496.916,169.037,496.916z M293.003,518.638l-9.745-32.4h-36.131l-8.975,32.4h-29.587l38.562-126.193    h37.455l39.124,126.193H293.003z M431.188,503.656c-13.299,11.053-33.518,16.295-58.229,16.295    c-14.782,0-25.271-0.939-32.39-1.878V394.137c10.483-1.692,24.157-2.626,38.575-2.626c23.968,0,39.492,4.304,51.664,13.479    c13.114,9.745,21.347,25.28,21.347,47.566C452.155,476.698,443.359,493.362,431.188,503.656z M97.2,366.752V21.601h250.203    v110.521c0,5.962,4.831,10.8,10.8,10.8H453.6l0.011,223.837H97.2V366.752z"/>
-                                                <path d="M325.244,268.289l-22.074-60.033h12.256v9.682h5.979v-25.353h-5.979v9.693h-14.46l-14.302-38.886    c1.529-3.449,2.404-7.235,2.404-11.243c0-14.109-10.525-25.65-24.123-27.496v-33.07h-7.491v33.064    c-13.614,1.846-24.131,13.387-24.131,27.496c0,5.655,1.695,10.908,4.611,15.303l-12.825,34.826h-15.029v-9.692h-5.978v25.352    h5.978v-9.682h12.835l-22.074,60.033l1.405,16.894l-8.214,36.598l18.479-32.379l13.278-12.445l37.249-95.354l37.272,95.354    l13.269,12.445l18.478,32.379l-8.216-36.598L325.244,268.289z M261.636,171.466c-10.655,0-19.28-8.627-19.28-19.256    c0-10.645,8.63-19.267,19.28-19.267c10.642,0,19.269,8.628,19.269,19.267C280.905,162.844,272.278,171.466,261.636,171.466z"/>
-                                                <circle cx="261.636" cy="152.475" r="9.504"/>
-                                            </g>
-                                        </g>
-                                        </svg>
-                                </div>
-                                <h3 class="item_title">캐드 파일</h3>
-                                <p class="item_subtitle">Auto CAD, ZWCAD, CADian, GSTARCAD등 다양한 캐드 파일에 적용 가능합니다.</p>
-                            </div>
-                        </li>
-                        <li class="item_container">
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                                        <path d="M13 2.5V5C13 7.35702 13 8.53553 13.7322 9.26777C14.4645 10 15.643 10 18 10H22" stroke="#1C274C" stroke-width="1.5"/>
-                                        <path d="M7 14L6 15L7 16M11.5 16L12.5 17L11.5 18M10 14L8.5 18" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M2.75 10C2.75 9.58579 2.41421 9.25 2 9.25C1.58579 9.25 1.25 9.58579 1.25 10H2.75ZM21.25 14C21.25 14.4142 21.5858 14.75 22 14.75C22.4142 14.75 22.75 14.4142 22.75 14H21.25ZM15.3929 4.05365L14.8912 4.61112L15.3929 4.05365ZM19.3517 7.61654L18.85 8.17402L19.3517 7.61654ZM21.654 10.1541L20.9689 10.4592V10.4592L21.654 10.1541ZM3.17157 20.8284L3.7019 20.2981H3.7019L3.17157 20.8284ZM20.8284 20.8284L20.2981 20.2981L20.2981 20.2981L20.8284 20.8284ZM1.35509 5.92658C1.31455 6.33881 1.61585 6.70585 2.02807 6.7464C2.4403 6.78695 2.80734 6.48564 2.84789 6.07342L1.35509 5.92658ZM22.6449 18.0734C22.6855 17.6612 22.3841 17.2941 21.9719 17.2536C21.5597 17.2131 21.1927 17.5144 21.1521 17.9266L22.6449 18.0734ZM14 21.25H10V22.75H14V21.25ZM2.75 14V10H1.25V14H2.75ZM21.25 13.5629V14H22.75V13.5629H21.25ZM14.8912 4.61112L18.85 8.17402L19.8534 7.05907L15.8947 3.49618L14.8912 4.61112ZM22.75 13.5629C22.75 11.8745 22.7651 10.8055 22.3391 9.84897L20.9689 10.4592C21.2349 11.0565 21.25 11.742 21.25 13.5629H22.75ZM18.85 8.17402C20.2034 9.3921 20.7029 9.86199 20.9689 10.4592L22.3391 9.84897C21.9131 8.89241 21.1084 8.18853 19.8534 7.05907L18.85 8.17402ZM10.0298 2.75C11.6116 2.75 12.2085 2.76158 12.7405 2.96573L13.2779 1.5653C12.4261 1.23842 11.498 1.25 10.0298 1.25V2.75ZM15.8947 3.49618C14.8087 2.51878 14.1297 1.89214 13.2779 1.5653L12.7405 2.96573C13.2727 3.16993 13.7215 3.55836 14.8912 4.61112L15.8947 3.49618ZM10 21.25C8.09318 21.25 6.73851 21.2484 5.71085 21.1102C4.70476 20.975 4.12511 20.7213 3.7019 20.2981L2.64124 21.3588C3.38961 22.1071 4.33855 22.4392 5.51098 22.5969C6.66182 22.7516 8.13558 22.75 10 22.75V21.25ZM1.25 14C1.25 15.8644 1.24841 17.3382 1.40313 18.489C1.56076 19.6614 1.89288 20.6104 2.64124 21.3588L3.7019 20.2981C3.27869 19.8749 3.02502 19.2952 2.88976 18.2892C2.75159 17.2615 2.75 15.9068 2.75 14H1.25ZM14 22.75C15.8644 22.75 17.3382 22.7516 18.489 22.5969C19.6614 22.4392 20.6104 22.1071 21.3588 21.3588L20.2981 20.2981C19.8749 20.7213 19.2952 20.975 18.2892 21.1102C17.2615 21.2484 15.9068 21.25 14 21.25V22.75ZM10.0298 1.25C8.15538 1.25 6.67442 1.24842 5.51887 1.40307C4.34232 1.56054 3.39019 1.8923 2.64124 2.64124L3.7019 3.7019C4.12453 3.27928 4.70596 3.02525 5.71785 2.88982C6.75075 2.75158 8.11311 2.75 10.0298 2.75V1.25ZM2.84789 6.07342C2.96931 4.83905 3.23045 4.17335 3.7019 3.7019L2.64124 2.64124C1.80633 3.47616 1.48944 4.56072 1.35509 5.92658L2.84789 6.07342ZM21.1521 17.9266C21.0307 19.1609 20.7695 19.8266 20.2981 20.2981L21.3588 21.3588C22.1937 20.5238 22.5106 19.4393 22.6449 18.0734L21.1521 17.9266Z" fill="#1C274C"/>
-                                    </svg>
-                                </div>
-                                <h3 class="item_title">소스코드</h3>
-                                <p class="item_subtitle">다양한 프로그래밍 언어 파일에도 적용이 가능합니다.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <ul id="language_list" class="language_list">
+              <li class="language_item">KR</li>
+              <li class="language_item">EN</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content_section">
+        <div class="content_first_container">
+          <div class="content_first_left_box">
+            <h3 class="first_title">DocuRay 기반 DRM / DLP 솔루션</h3>
+            <p class="first_subtitle">
+              DocuRay DRM은 타 솔루션과 달리 Kernel Level 에서 작동하여,
+              <br class="CRLF" />다른 APP과 충돌이 적고 작은 리소스로 빠르게
+              동작하는 효율적인 DRM 솔루션 입니다.
+            </p>
+          </div>
+          <div class="content_first_right_box"></div>
         </div>
-    </div>
-    <div class="catalog_box">
-        <a class="catalog_download_btn" href="resources/files/Ziewise_main_solution_highlight.pdf" download></a>
-    </div>
-    <div class="inqueryBox">
-        <div class="inquery_container" id="inquery_container">
-            <div class="inquery_header">
-                <h3>견적 문의</h3>
-                <svg id="close_inquery_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg>                  
-            </div>
-            <form id="inqueryForm">
-                <div class="field_box">
-                    <label for="name" class="form_label">성함</label>
-                    <input required type="text" name="name" id="name" placeholder="Name" class="form_input">
+        <div class="content_second_container">
+          <div class="content_second_title_box">
+            <h3 class="content_second_title">DocuRay 주요 기능</h3>
+          </div>
+          <div class="content_second_body_box">
+            <ul class="item_list">
+              <li class="item_container">
+                <div class="item_box">
+                  <img
+                    class="function_icon"
+                    src="resources/images/detail_drm/secured_file.svg"
+                  />
+                  <h3 class="function_title">문서 및 파일 암호화</h3>
                 </div>
-                <div class="field_box">
-                    <label for="company" class="form_label">회사명</label>
-                    <input required type="text" name="company" id="company" placeholder="Company Name" class="form_input">
+              </li>
+              <li class="item_container">
+                <div class="item_box">
+                  <img
+                    class="function_icon"
+                    src="resources/images/detail_drm/user_permission.svg"
+                  />
+                  <h3 class="function_title">유저별 승인 권한</h3>
                 </div>
-                <div class="field_box">
-                    <label for="email" class="form_label">메일 주소</label>
-                    <input required type="email" name="email" id="email" placeholder="example@gmail.com" class="form_input">
+              </li>
+              <li class="item_container">
+                <div class="item_box">
+                  <img
+                    class="function_icon"
+                    src="resources/images/detail_drm/approved_file.svg"
+                  />
+                  <h3 class="function_title">승인된 파일만 반출</h3>
                 </div>
-                <div class="field_box">
-                    <label for="message" class="form_label">문의 내용</label>
-                    <textarea required type="text" name="message" id="message" placeholder="문의 내용을 작성해주세요." class="form_textarea"></textarea>
+              </li>
+              <li class="item_container">
+                <div class="item_box">
+                  <img
+                    class="function_icon"
+                    src="resources/images/detail_drm/watching_web_email.svg"
+                  />
+                  <h3 class="function_title">메일 및 웹 업로드 모니터링</h3>
                 </div>
-                <input  type="submit" class="form_submit"></input>
-            </form>
-            <div class="success_info_box" id="success_info_box">
-                <div class="success_info_header">
-                    <svg id="close_success_info_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </li>
+              <li class="item_container">
+                <div class="item_box">
+                  <img
+                    class="function_icon"
+                    src="resources/images/detail_drm/usb_block.svg"
+                  />
+                  <h3 class="function_title">USB 및 외부 저장 장치 제어</h3>
+                </div>
+              </li>
+              <li class="item_container">
+                <div class="item_box">
+                  <img
+                    class="function_icon"
+                    src="resources/images/detail_drm/alarm_log_icon.svg"
+                  />
+                  <h3 class="function_title">
+                    실시간 보안 이벤트 알림 및 로깅
+                  </h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content_thrid_container">
+          <div class="content_thrid_title_box">
+            <h3 class="content_thrid_title">
+              DocuRay DRM/DLP는 아래와 같은 파일에 적용 가능합니다.
+            </h3>
+            <p class="content_thrid_subtitle">
+              * 아래 지원 목록에 없는 프로그램도 지원가능하도록 설정가능하니,
+              문의부탁드립니다.
+            </p>
+          </div>
+          <div class="content_thrid_body_box">
+            <ul class="item_list">
+              <li class="item_container">
+                <div class="item_box">
+                  <div class="item_img">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <rect width="24" height="24" fill="white" />
+                      <path
+                        d="M10 1.5L12.5 4L15 6.5M10 1.5L3 1.5L3 17.5L15 17.5L15 6.5M10 1.5L10 6.5L15 6.5"
+                        stroke="#000000"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17 6.5L19.5 9L22 11.5M17 6.5L17 11.5L22 11.5M17 6.5L14 6.5M22 11.5L22 22.5L10 22.5L10 17.5"
+                        stroke="#000000"
+                        stroke-linejoin="round"
+                      />
                     </svg>
+                  </div>
+                  <h3 class="item_title">오피스 문서</h3>
+                  <p class="item_subtitle">
+                    MS Office, HancomOffice 등 다양한 업무 문서 파일에 적용
+                    가능합니다.
+                  </p>
                 </div>
-                <div class="success_info_body">
-                    <svg width="800px" height="800px" viewBox="0 0 117 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
-                            <g fill-rule="nonzero" id="correct">
-                                <path d="M34.5,55.1 C32.9,53.5 30.3,53.5 28.7,55.1 C27.1,56.7 27.1,59.3 28.7,60.9 L47.6,79.8 C48.4,80.6 49.4,81 50.5,81 C50.6,81 50.6,81 50.7,81 C51.8,80.9 52.9,80.4 53.7,79.5 L101,22.8 C102.4,21.1 102.2,18.5 100.5,17 C98.8,15.6 96.2,15.8 94.7,17.5 L50.2,70.8 L34.5,55.1 Z" fill="#17AB13" id="Shape"/>
-                                <path d="M89.1,9.3 C66.1,-5.1 36.6,-1.7 17.4,17.5 C-5.2,40.1 -5.2,77 17.4,99.6 C28.7,110.9 43.6,116.6 58.4,116.6 C73.2,116.6 88.1,110.9 99.4,99.6 C118.7,80.3 122,50.7 107.5,27.7 C106.3,25.8 103.8,25.2 101.9,26.4 C100,27.6 99.4,30.1 100.6,32 C113.1,51.8 110.2,77.2 93.6,93.8 C74.2,113.2 42.5,113.2 23.1,93.8 C3.7,74.4 3.7,42.7 23.1,23.3 C39.7,6.8 65,3.9 84.8,16.2 C86.7,17.4 89.2,16.8 90.4,14.9 C91.6,13 91,10.5 89.1,9.3 Z" fill="#4A4A4A" id="Shape"/>
-                            </g>
+              </li>
+              <li class="item_container">
+                <div class="item_box">
+                  <div class="item_img">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 48 48"
+                      id="a"
+                    >
+                      <defs>
+                        <style>
+                          .b {
+                            fill: none;
+                            stroke: #000000;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                          }
+                        </style>
+                      </defs>
+                      <path
+                        class="b"
+                        d="M29.4995,12.3739c.7719-.0965,1.5437,.4824,1.5437,1.2543h0l2.5085,23.8312c.0965,.7719-.4824,1.5437-1.2543,1.5437l-23.7347,2.5085c-.7719,.0965-1.5437-.4824-1.5437-1.2543h0l-2.5085-23.7347c-.0965-.7719,.4824-1.5437,1.2543-1.5437l23.7347-2.605Z"
+                      />
+                      <path
+                        class="b"
+                        d="M12.9045,18.9347c-1.7367,.193-3.0874,1.7367-2.8945,3.5699,.193,1.7367,1.7367,3.0874,3.5699,2.8945,1.7367-.193,3.0874-1.7367,2.8945-3.5699s-1.8332-3.0874-3.5699-2.8945h0Zm8.7799,5.596l-4.6312,5.6925c-.193,.193-.4824,.2894-.6754,.0965h0l-1.0613-.8683c-.193-.193-.5789-.0965-.6754,.0965l-5.0171,6.1749c-.193,.193-.193,.5789,.0965,.6754-.0965,.0965,.0965,.0965,.193,.0965l19.9719-2.1226c.2894,0,.4824-.2894,.4824-.5789,0-.0965-.0965-.193-.0965-.2894l-7.8151-9.0694c-.2894-.0965-.5789-.0965-.7719,.0965h0Z"
+                      />
+                      <path
+                        class="b"
+                        d="M16.2814,13.8211l.6754-6.0784c.0965-.7719,.7719-1.3508,1.5437-1.2543l23.7347,2.5085c.7719,.0965,1.3508,.7719,1.2543,1.5437h0l-2.5085,23.7347c0,.6754-.7719,1.2543-1.5437,1.2543l-6.1749-.6754"
+                      />
+                      <path
+                        class="b"
+                        d="M32.7799,29.9337l5.3065,.5789c.2894,0,.4824-.193,.5789-.4824,0-.0965,0-.193-.0965-.2894l-5.789-10.5166c-.0965-.193-.4824-.2894-.6754-.193h0l-.3859,.3859"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="item_title">이미지 파일</h3>
+                  <p class="item_subtitle">
+                    jpg, png, bmp, gif, tif, jpeg 등 다양한 이미지에도 적용
+                    가능합니다.
+                  </p>
+                </div>
+              </li>
+              <li class="item_container">
+                <div class="item_box">
+                  <div class="item_img">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#000000"
+                      version="1.1"
+                      id="Capa_1"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 550.801 550.801"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M264.908,413.791h-0.369c-1.866,7.494-3.73,17.033-5.798,24.332l-7.48,26.778h27.884l-7.865-26.778    C269.027,430.64,266.78,421.285,264.908,413.791z"
+                          />
+                          <path
+                            d="M382.135,413.417c-6.36,0-10.479,0.564-12.92,1.128v82.562c2.436,0.559,6.37,0.559,9.924,0.559    c25.84,0.19,42.684-14.038,42.684-44.181C422.012,427.275,406.666,413.417,382.135,413.417z"
+                          />
+                          <path
+                            d="M475.095,131.992c-0.032-2.521-0.833-5.021-2.568-6.993L366.324,3.689c-0.021-0.035-0.053-0.045-0.084-0.077    c-0.633-0.706-1.36-1.284-2.141-1.803c-0.232-0.145-0.465-0.285-0.707-0.422c-0.686-0.367-1.393-0.665-2.131-0.886    c-0.2-0.063-0.379-0.145-0.58-0.197C359.87,0.114,359.037,0,358.203,0H97.2C85.292,0,75.6,9.693,75.6,21.601v507.6    c0,11.907,9.692,21.601,21.6,21.601H453.6c11.908,0,21.601-9.693,21.601-21.601V133.202    C475.2,132.791,475.137,132.393,475.095,131.992z M169.037,496.916c8.628,0,18.17-1.872,23.792-4.118l4.303,22.285    c-5.242,2.616-17.031,5.427-32.39,5.427c-43.63,0-66.095-27.147-66.095-63.097c0-43.068,30.705-67.025,68.903-67.025    c14.787,0,26.03,3.001,31.084,5.611l-5.801,22.649c-5.812-2.432-13.856-4.667-23.965-4.667c-22.663,0-40.268,13.652-40.268,41.739    C128.596,481.001,143.585,496.916,169.037,496.916z M293.003,518.638l-9.745-32.4h-36.131l-8.975,32.4h-29.587l38.562-126.193    h37.455l39.124,126.193H293.003z M431.188,503.656c-13.299,11.053-33.518,16.295-58.229,16.295    c-14.782,0-25.271-0.939-32.39-1.878V394.137c10.483-1.692,24.157-2.626,38.575-2.626c23.968,0,39.492,4.304,51.664,13.479    c13.114,9.745,21.347,25.28,21.347,47.566C452.155,476.698,443.359,493.362,431.188,503.656z M97.2,366.752V21.601h250.203    v110.521c0,5.962,4.831,10.8,10.8,10.8H453.6l0.011,223.837H97.2V366.752z"
+                          />
+                          <path
+                            d="M325.244,268.289l-22.074-60.033h12.256v9.682h5.979v-25.353h-5.979v9.693h-14.46l-14.302-38.886    c1.529-3.449,2.404-7.235,2.404-11.243c0-14.109-10.525-25.65-24.123-27.496v-33.07h-7.491v33.064    c-13.614,1.846-24.131,13.387-24.131,27.496c0,5.655,1.695,10.908,4.611,15.303l-12.825,34.826h-15.029v-9.692h-5.978v25.352    h5.978v-9.682h12.835l-22.074,60.033l1.405,16.894l-8.214,36.598l18.479-32.379l13.278-12.445l37.249-95.354l37.272,95.354    l13.269,12.445l18.478,32.379l-8.216-36.598L325.244,268.289z M261.636,171.466c-10.655,0-19.28-8.627-19.28-19.256    c0-10.645,8.63-19.267,19.28-19.267c10.642,0,19.269,8.628,19.269,19.267C280.905,162.844,272.278,171.466,261.636,171.466z"
+                          />
+                          <circle cx="261.636" cy="152.475" r="9.504" />
                         </g>
+                      </g>
                     </svg>
-                    <h4>문의 완료</h4>
-                    <p>문의가 성공적으로 접수되었으며, 빠른 시일내로 답변드리겠습니다.</p>
-                    <button class="close_success_info_btn" id="close_success_info_btn">메시지 닫기</button>
+                  </div>
+                  <h3 class="item_title">캐드 파일</h3>
+                  <p class="item_subtitle">
+                    Auto CAD, ZWCAD, CADian, GSTARCAD등 다양한 캐드 파일에 적용
+                    가능합니다.
+                  </p>
                 </div>
-            </div>
+              </li>
+              <li class="item_container">
+                <div class="item_box">
+                  <div class="item_img">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M13 2.5V5C13 7.35702 13 8.53553 13.7322 9.26777C14.4645 10 15.643 10 18 10H22"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M7 14L6 15L7 16M11.5 16L12.5 17L11.5 18M10 14L8.5 18"
+                        stroke="#1C274C"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.75 10C2.75 9.58579 2.41421 9.25 2 9.25C1.58579 9.25 1.25 9.58579 1.25 10H2.75ZM21.25 14C21.25 14.4142 21.5858 14.75 22 14.75C22.4142 14.75 22.75 14.4142 22.75 14H21.25ZM15.3929 4.05365L14.8912 4.61112L15.3929 4.05365ZM19.3517 7.61654L18.85 8.17402L19.3517 7.61654ZM21.654 10.1541L20.9689 10.4592V10.4592L21.654 10.1541ZM3.17157 20.8284L3.7019 20.2981H3.7019L3.17157 20.8284ZM20.8284 20.8284L20.2981 20.2981L20.2981 20.2981L20.8284 20.8284ZM1.35509 5.92658C1.31455 6.33881 1.61585 6.70585 2.02807 6.7464C2.4403 6.78695 2.80734 6.48564 2.84789 6.07342L1.35509 5.92658ZM22.6449 18.0734C22.6855 17.6612 22.3841 17.2941 21.9719 17.2536C21.5597 17.2131 21.1927 17.5144 21.1521 17.9266L22.6449 18.0734ZM14 21.25H10V22.75H14V21.25ZM2.75 14V10H1.25V14H2.75ZM21.25 13.5629V14H22.75V13.5629H21.25ZM14.8912 4.61112L18.85 8.17402L19.8534 7.05907L15.8947 3.49618L14.8912 4.61112ZM22.75 13.5629C22.75 11.8745 22.7651 10.8055 22.3391 9.84897L20.9689 10.4592C21.2349 11.0565 21.25 11.742 21.25 13.5629H22.75ZM18.85 8.17402C20.2034 9.3921 20.7029 9.86199 20.9689 10.4592L22.3391 9.84897C21.9131 8.89241 21.1084 8.18853 19.8534 7.05907L18.85 8.17402ZM10.0298 2.75C11.6116 2.75 12.2085 2.76158 12.7405 2.96573L13.2779 1.5653C12.4261 1.23842 11.498 1.25 10.0298 1.25V2.75ZM15.8947 3.49618C14.8087 2.51878 14.1297 1.89214 13.2779 1.5653L12.7405 2.96573C13.2727 3.16993 13.7215 3.55836 14.8912 4.61112L15.8947 3.49618ZM10 21.25C8.09318 21.25 6.73851 21.2484 5.71085 21.1102C4.70476 20.975 4.12511 20.7213 3.7019 20.2981L2.64124 21.3588C3.38961 22.1071 4.33855 22.4392 5.51098 22.5969C6.66182 22.7516 8.13558 22.75 10 22.75V21.25ZM1.25 14C1.25 15.8644 1.24841 17.3382 1.40313 18.489C1.56076 19.6614 1.89288 20.6104 2.64124 21.3588L3.7019 20.2981C3.27869 19.8749 3.02502 19.2952 2.88976 18.2892C2.75159 17.2615 2.75 15.9068 2.75 14H1.25ZM14 22.75C15.8644 22.75 17.3382 22.7516 18.489 22.5969C19.6614 22.4392 20.6104 22.1071 21.3588 21.3588L20.2981 20.2981C19.8749 20.7213 19.2952 20.975 18.2892 21.1102C17.2615 21.2484 15.9068 21.25 14 21.25V22.75ZM10.0298 1.25C8.15538 1.25 6.67442 1.24842 5.51887 1.40307C4.34232 1.56054 3.39019 1.8923 2.64124 2.64124L3.7019 3.7019C4.12453 3.27928 4.70596 3.02525 5.71785 2.88982C6.75075 2.75158 8.11311 2.75 10.0298 2.75V1.25ZM2.84789 6.07342C2.96931 4.83905 3.23045 4.17335 3.7019 3.7019L2.64124 2.64124C1.80633 3.47616 1.48944 4.56072 1.35509 5.92658L2.84789 6.07342ZM21.1521 17.9266C21.0307 19.1609 20.7695 19.8266 20.2981 20.2981L21.3588 21.3588C22.1937 20.5238 22.5106 19.4393 22.6449 18.0734L21.1521 17.9266Z"
+                        fill="#1C274C"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="item_title">소스코드</h3>
+                  <p class="item_subtitle">
+                    다양한 프로그래밍 언어 파일에도 적용이 가능합니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="inquery_icon" id="inquery_icon">
-
-        </div>
+      </div>
     </div>
     <footer>
-        <div class="footer_company_info_first_box">
-            <p>지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 : 이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849</p>
-        </div>
-        <div class="footer_company_info_second_box">
-            <p>Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호</p>
-        </div>
-        <div class="footer_company_info_third_box">
-            <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
-            <p>Copyright (c) Since 2024. All rights reserved</p>
-        </div>
+      <div class="footer_company_info_first_box">
+        <p>
+          지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 :
+          이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849
+        </p>
+      </div>
+      <div class="footer_company_info_second_box">
+        <p>
+          Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호
+        </p>
+      </div>
+      <div class="footer_company_info_third_box">
+        <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
+        <p>Copyright (c) Since 2024. All rights reserved</p>
+      </div>
     </footer>
-    <script type="text/javascript" src="resources/js/inquery.js"></script>
-</body>
+    <script type="text/javascript" src="resources/js/header.js"></script>
+  </body>
 </html>

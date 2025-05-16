@@ -1,263 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>(주)지와이즈</title>
     <link href="resources/css/default.css" rel="stylesheet" />
     <link href="resources/css/header.css" rel="stylesheet" />
-    <link href="resources/css/detail_solution_processfusion.css" rel="stylesheet" />
+    <link
+      href="resources/css/detail_solution_processfusion.css"
+      rel="stylesheet"
+    />
     <link rel="icon" href="resources/images/ziewise_logo.ico" />
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-</head>
-<body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
     <div class="main_section">
-        <header class="header_section">
-            <nav class="navbar">
-                <div class="logo_section">
-                    <a class="logo_container" href="index.html">
-                        <div class="logo_box">
-                            <div class="logo_img"></div>
+      <header class="header_section">
+        <nav class="navbar">
+          <div class="logo_section">
+            <a class="logo_container" href="index.html">
+              <div class="logo_box">
+                <div class="logo_img"></div>
+              </div>
+              <h6 class="logo">ziewise</h6>
+            </a>
+          </div>
+          <div class="burger_box">
+            <svg id="ham" class="ham" viewBox="0 0 100 100" width="80">
+              <path
+                class="line top"
+                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+              />
+              <path class="line middle" d="m 30,50 h 40" />
+              <path
+                class="line bottom"
+                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+              />
+            </svg>
+          </div>
+          <div id="navigation_section" class="navigation_section">
+            <ul class="navbar_list">
+              <li class="nav_item">
+                <a href="about_business.html">기업소개</a>
+              </li>
+              <li class="nav_item">
+                <a>솔루션</a>
+                <div class="nav_item_snap">
+                  <div class="snap_box">
+                    <ul class="snap_list">
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_PF.html">Process Fusion</a>
+                          </h3>
+                          <p>모든 프린터에 구현가능한 보안 프린팅 솔루션</p>
                         </div>
-                        <h6 class="logo">
-                            ziewise
-                        </h6>
-                    </a>
-                </div>
-                <div class="navigation_section">
-                    <ul class="navbar_list">
-                        <li class="nav_item">
-                            <a href="about_business.html">기업소개</a>
-                        </li>
-                        <li class="nav_item">
-                            <a>솔루션</a>
-                            <div class="nav_item_snap">
-                                <div class="snap_box">
-                                    <ul class="snap_list">
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3><a href="detail_solution_PF.html">Process Fusion</a></h3>
-                                                <p>모든 프린터에 구현가능한 보안 프린팅 솔루션</p>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3><a href="detail_solution_smartCCTV.html">이동형 스마트 CCTV</a></h3>
-                                                <p>산업 재해 예방을 위한 솔루션</p>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3>SaaS 솔루션</h3>
-                                                <ul class="sub_snap_item_list">
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_DRM.html">DRM/DLP</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_VPC.html">VPC</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3>IT Infra 서비스</h3>
-                                                <ul class="sub_snap_item_list">
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_zabbix.html">Zabbix 모니터링</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_infraHosting.html">IT 인프라 호스팅</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_infraBuildUp.html">IT 인프라 구축</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav_item">
-                            <a>고객문의</a>
-                        </li>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_smartCCTV.html"
+                              >이동형 스마트 CCTV</a
+                            >
+                          </h3>
+                          <p>산업 재해 예방을 위한 솔루션</p>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>SaaS 솔루션</h3>
+                          <ul class="sub_snap_item_list">
+                            <li class="sub_item">
+                              <a href="detail_solution_DRM.html">DRM/DLP</a>
+                            </li>
+                            <li class="sub_item">
+                              <a href="detail_solution_VPC.html">VPC</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>IT Infra 서비스</h3>
+                          <ul class="sub_snap_item_list">
+                            <li class="sub_item">
+                              <a href="detail_solution_zabbix.html"
+                                >Zabbix 모니터링</a
+                              >
+                            </li>
+                            <li class="sub_item">
+                              <a href="detail_solution_infraHosting.html"
+                                >IT 인프라 호스팅</a
+                              >
+                            </li>
+                            <li class="sub_item">
+                              <a href="detail_solution_infraBuildUp.html"
+                                >IT 인프라 구축</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
                     </ul>
+                  </div>
                 </div>
-                <div class="lang_section">
-                    <div class="lang_section_box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div class="content_section">
-            <div class="content_section_container">
-                <div class="content_header_section">
-                    <div class="content_header_left_section">
-                        <div class="solution_title_box">
-                            <h3 class="title_first">Process</h3>
-                            <h3 class="title_last">&nbsp;Fusion</h3>
-                        </div>
-                        <div class="content_header_left_section_container">
-                            <div class="solution_logo_box">
-                                <div class="solution_logo_box_container">
-                                    <div class="solution_logo_border">
-                                        <svg viewBox="0 0 134 84" style="width:134px;height:84px"><path d="M 9.113 63.151 C -2.484 51.347 -2.484 32.098 9.113 20.294 C 14.69 14.592 22.274 11.395 30.178 11.416 C 38.064 11.392 45.631 14.58 51.193 20.269 L 82.984 51.503 C 88.32 56.934 97.045 56.988 102.355 51.554 C 107.691 46.122 107.691 37.296 102.355 31.888 C 99.863 29.361 96.508 27.911 92.991 27.84 C 89.269 27.84 85.778 29.93 83.291 31.915 C 82.009 32.941 80.808 34.068 79.699 35.284 L 73.67 29.147 C 75.594 27.006 83.264 19.172 92.552 19.172 C 98.327 19.145 104.075 21.367 108.386 25.752 C 117.032 34.554 117.032 48.891 108.386 57.717 C 99.736 66.52 85.677 66.52 77.005 57.744 L 45.239 26.484 C 36.953 18.047 23.431 17.996 15.142 26.43 C 6.856 34.869 6.856 48.576 15.142 57.015 C 21.884 63.943 32.361 65.388 40.671 60.537 L 47.036 66.727 C 42.083 70.242 36.19 72.129 30.152 72.132 C 22.244 72.106 14.672 68.874 9.113 63.149 Z" fill="var(--token-24a77869-6c1b-4d21-aeba-9fb695018ee3, rgb(13, 189, 179)) /* {&quot;name&quot;:&quot;violet-500&quot;} */"></path><path d="M 88.014 41.849 C 88.014 39.105 90.194 36.913 92.861 36.913 C 95.557 36.913 97.711 39.132 97.711 41.849 C 97.711 44.591 95.531 46.783 92.861 46.783 C 91.574 46.789 90.338 46.27 89.428 45.344 C 88.518 44.417 88.008 43.159 88.014 41.849 Z" fill="var(--token-24a77869-6c1b-4d21-aeba-9fb695018ee3, rgb(13, 189, 179)) /* {&quot;name&quot;:&quot;violet-500&quot;} */"></path><path d="M 63.896 71.39 L 41.16 49.322 C 41.005 49.171 40.795 49.094 40.58 49.109 C 40.366 49.123 40.168 49.229 40.034 49.4 C 36.971 53.213 31.884 54.654 27.325 53.002 C 22.767 51.35 19.72 46.96 19.714 42.035 C 19.719 35.605 24.837 30.394 31.154 30.386 C 34.427 30.4 37.541 31.824 39.725 34.305 L 70.667 64.232 C 82.96 76.719 102.767 76.719 114.954 64.312 C 120.839 58.355 124.138 50.249 124.115 41.8 C 124.115 33.313 120.856 25.293 114.954 19.289 C 103.158 7.208 84.092 6.769 71.772 18.296 L 67.308 22.84 L 60.407 15.816 L 64.921 11.245 L 65.075 11.086 C 81.243 -4.124 106.339 -3.58 121.858 12.316 C 129.577 20.132 133.901 30.769 133.863 41.852 C 133.863 53.003 129.605 63.503 121.858 71.388 C 114.176 79.227 103.741 83.627 92.864 83.612 C 82.368 83.561 71.873 79.512 63.893 71.39 Z" fill="var(--token-d1fa08ee-c247-459b-aaf3-d2091e9cede1, rgb(3, 47, 85)) /* {&quot;name&quot;:&quot;gray-900&quot;} */"></path></svg>
-                                    </div>
-                                </div>
-                                <div class="wave one"></div>
-                                <div class="wave two"></div>
-                                <div class="wave three"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content_header_right_section">
-                        <div class="content_header_right_img_box"></div>
-                    </div>
-                </div>
-                <div class="content_body_section">
-                    <div class="content_body_left_section">
-                        <div class="content_body_left_box">
-                            <h4>주요 기능</h4>
-                            <p>Process Fusion으로 디지털 업무 환경을 경험해보세요.</p>
-                        </div>
-                        <div class="content_body_left_btn_box">
-                            <div class="demo_btn_box">
-                                <button class="demo_btn">데모 신청</button>
-                            </div>
-                            <div class="download_btn_box">
-                                <button class="download_btn">카탈로그</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content_body_right_section">
-                        <ul class="item_list">
-                            <li class="item_box">
-                                <div class="item_box_container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
-                                      </svg>
-                                      <h4>출력물 보안</h4>                                      
-                                </div>
-                            </li>
-                            <li class="item_box">
-                                <div class="item_box_container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
-                                      </svg>
-                                      <h4>홈&오피스 출력 지원</h4>                                      
-                                </div>
-                            </li>
-                            <li class="item_box">
-                                <div class="item_box_container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
-                                      </svg>
-                                      <h4>고객 맞춤형 구성</h4>
-                                </div>
-                            </li>
-                            <li class="item_box">
-                                <div class="item_box_container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                      </svg>
-                                      <h4>ISO27001 인증 솔루션</h4>                                      
-                                </div>
-                            </li>
-                            <li class="item_box">
-                                <div class="item_box_container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-                                    </svg>
-                                    <h4>모든 제조사 모델 지원</h4>
-                                </div>
-                            </li>
-                            <li class="item_box">
-                                <div class="item_box_container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                                      </svg>
-                                      <h4>모바일 지원</h4>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+              </li>
+              <li class="nav_item">
+                <a href="inquery_page.html">고객문의</a>
+              </li>
+              <li class="nav_item catalog_item">
+                <a
+                  href="resources/files/Ziewise_main_solution_highlight.pdf"
+                  download
+                  >카탈로그 다운로드</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="lang_section">
+            <div class="lang_section_box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="language_icon"
+                width="42"
+                height="42"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-globe"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
             </div>
-        </div>
-    </div>
-
-    <div class="catalog_box">
-        <a class="catalog_download_btn" href="resources/files/Ziewise_main_solution_highlight.pdf" download></a>
-    </div>
-    <div class="inqueryBox">
-        <div class="inquery_container" id="inquery_container">
-            <div class="inquery_header">
-                <h3>견적 문의</h3>
-                <svg id="close_inquery_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg>                  
+            <ul id="language_list" class="language_list">
+              <li class="language_item">KR</li>
+              <li class="language_item">EN</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content_section">
+        <div class="content_section_container">
+          <div class="content_header_section">
+            <div class="content_header_left_section">
+              <div class="solution_title_box">
+                <h3 class="title_first">Process</h3>
+                <h3 class="title_last">&nbsp;Fusion</h3>
+              </div>
+              <div class="content_header_left_section_container">
+                <div class="solution_logo_box">
+                  <div class="solution_logo_box_container">
+                    <div class="solution_logo_border">
+                      <svg
+                        viewBox="0 0 134 84"
+                        style="width: 134px; height: 84px"
+                      >
+                        <path
+                          d="M 9.113 63.151 C -2.484 51.347 -2.484 32.098 9.113 20.294 C 14.69 14.592 22.274 11.395 30.178 11.416 C 38.064 11.392 45.631 14.58 51.193 20.269 L 82.984 51.503 C 88.32 56.934 97.045 56.988 102.355 51.554 C 107.691 46.122 107.691 37.296 102.355 31.888 C 99.863 29.361 96.508 27.911 92.991 27.84 C 89.269 27.84 85.778 29.93 83.291 31.915 C 82.009 32.941 80.808 34.068 79.699 35.284 L 73.67 29.147 C 75.594 27.006 83.264 19.172 92.552 19.172 C 98.327 19.145 104.075 21.367 108.386 25.752 C 117.032 34.554 117.032 48.891 108.386 57.717 C 99.736 66.52 85.677 66.52 77.005 57.744 L 45.239 26.484 C 36.953 18.047 23.431 17.996 15.142 26.43 C 6.856 34.869 6.856 48.576 15.142 57.015 C 21.884 63.943 32.361 65.388 40.671 60.537 L 47.036 66.727 C 42.083 70.242 36.19 72.129 30.152 72.132 C 22.244 72.106 14.672 68.874 9.113 63.149 Z"
+                          fill='var(--token-24a77869-6c1b-4d21-aeba-9fb695018ee3, rgb(13, 189, 179)) /* {"name":"violet-500"} */'
+                        ></path>
+                        <path
+                          d="M 88.014 41.849 C 88.014 39.105 90.194 36.913 92.861 36.913 C 95.557 36.913 97.711 39.132 97.711 41.849 C 97.711 44.591 95.531 46.783 92.861 46.783 C 91.574 46.789 90.338 46.27 89.428 45.344 C 88.518 44.417 88.008 43.159 88.014 41.849 Z"
+                          fill='var(--token-24a77869-6c1b-4d21-aeba-9fb695018ee3, rgb(13, 189, 179)) /* {"name":"violet-500"} */'
+                        ></path>
+                        <path
+                          d="M 63.896 71.39 L 41.16 49.322 C 41.005 49.171 40.795 49.094 40.58 49.109 C 40.366 49.123 40.168 49.229 40.034 49.4 C 36.971 53.213 31.884 54.654 27.325 53.002 C 22.767 51.35 19.72 46.96 19.714 42.035 C 19.719 35.605 24.837 30.394 31.154 30.386 C 34.427 30.4 37.541 31.824 39.725 34.305 L 70.667 64.232 C 82.96 76.719 102.767 76.719 114.954 64.312 C 120.839 58.355 124.138 50.249 124.115 41.8 C 124.115 33.313 120.856 25.293 114.954 19.289 C 103.158 7.208 84.092 6.769 71.772 18.296 L 67.308 22.84 L 60.407 15.816 L 64.921 11.245 L 65.075 11.086 C 81.243 -4.124 106.339 -3.58 121.858 12.316 C 129.577 20.132 133.901 30.769 133.863 41.852 C 133.863 53.003 129.605 63.503 121.858 71.388 C 114.176 79.227 103.741 83.627 92.864 83.612 C 82.368 83.561 71.873 79.512 63.893 71.39 Z"
+                          fill='var(--token-d1fa08ee-c247-459b-aaf3-d2091e9cede1, rgb(3, 47, 85)) /* {"name":"gray-900"} */'
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="wave one"></div>
+                  <div class="wave two"></div>
+                  <div class="wave three"></div>
+                </div>
+              </div>
             </div>
-            <form id="inqueryForm">
-                <div class="field_box">
-                    <label for="name" class="form_label">성함</label>
-                    <input required type="text" name="name" id="name" placeholder="Name" class="form_input">
+            <div class="content_header_right_section">
+              <div class="content_header_right_img_box"></div>
+            </div>
+          </div>
+          <div class="content_body_section">
+            <div class="content_body_left_section">
+              <div class="content_body_left_box">
+                <h4>주요 기능</h4>
+                <p>Process Fusion으로 디지털 업무 환경을 경험해보세요.</p>
+              </div>
+              <div class="content_body_left_btn_box">
+                <div class="demo_btn_box">
+                  <button class="demo_btn">데모 신청</button>
                 </div>
-                <div class="field_box">
-                    <label for="company" class="form_label">회사명</label>
-                    <input required type="text" name="company" id="company" placeholder="Company Name" class="form_input">
+                <div class="download_btn_box">
+                  <button class="download_btn">카탈로그</button>
                 </div>
-                <div class="field_box">
-                    <label for="email" class="form_label">메일 주소</label>
-                    <input required type="email" name="email" id="email" placeholder="example@gmail.com" class="form_input">
-                </div>
-                <div class="field_box">
-                    <label for="message" class="form_label">문의 내용</label>
-                    <textarea required type="text" name="message" id="message" placeholder="문의 내용을 작성해주세요." class="form_textarea"></textarea>
-                </div>
-                <input  type="submit" class="form_submit"></input>
-            </form>
-            <div class="success_info_box" id="success_info_box">
-                <div class="success_info_header">
-                    <svg id="close_success_info_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </div>
+            </div>
+            <div class="content_body_right_section">
+              <ul class="item_list">
+                <li class="item_box">
+                  <div class="item_box_container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z"
+                      />
                     </svg>
-                </div>
-                <div class="success_info_body">
-                    <svg width="800px" height="800px" viewBox="0 0 117 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
-                            <g fill-rule="nonzero" id="correct">
-                                <path d="M34.5,55.1 C32.9,53.5 30.3,53.5 28.7,55.1 C27.1,56.7 27.1,59.3 28.7,60.9 L47.6,79.8 C48.4,80.6 49.4,81 50.5,81 C50.6,81 50.6,81 50.7,81 C51.8,80.9 52.9,80.4 53.7,79.5 L101,22.8 C102.4,21.1 102.2,18.5 100.5,17 C98.8,15.6 96.2,15.8 94.7,17.5 L50.2,70.8 L34.5,55.1 Z" fill="#17AB13" id="Shape"/>
-                                <path d="M89.1,9.3 C66.1,-5.1 36.6,-1.7 17.4,17.5 C-5.2,40.1 -5.2,77 17.4,99.6 C28.7,110.9 43.6,116.6 58.4,116.6 C73.2,116.6 88.1,110.9 99.4,99.6 C118.7,80.3 122,50.7 107.5,27.7 C106.3,25.8 103.8,25.2 101.9,26.4 C100,27.6 99.4,30.1 100.6,32 C113.1,51.8 110.2,77.2 93.6,93.8 C74.2,113.2 42.5,113.2 23.1,93.8 C3.7,74.4 3.7,42.7 23.1,23.3 C39.7,6.8 65,3.9 84.8,16.2 C86.7,17.4 89.2,16.8 90.4,14.9 C91.6,13 91,10.5 89.1,9.3 Z" fill="#4A4A4A" id="Shape"/>
-                            </g>
-                        </g>
+                    <h4>출력물 보안</h4>
+                  </div>
+                </li>
+                <li class="item_box">
+                  <div class="item_box_container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"
+                      />
                     </svg>
-                    <h4>문의 완료</h4>
-                    <p>문의가 성공적으로 접수되었으며, 빠른 시일내로 답변드리겠습니다.</p>
-                    <button class="close_success_info_btn" id="close_success_info_btn">메시지 닫기</button>
-                </div>
+                    <h4>홈&오피스 출력 지원</h4>
+                  </div>
+                </li>
+                <li class="item_box">
+                  <div class="item_box_container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"
+                      />
+                    </svg>
+                    <h4>고객 맞춤형 구성</h4>
+                  </div>
+                </li>
+                <li class="item_box">
+                  <div class="item_box_container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+                    <h4>ISO27001 인증 솔루션</h4>
+                  </div>
+                </li>
+                <li class="item_box">
+                  <div class="item_box_container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"
+                      />
+                    </svg>
+                    <h4>모든 제조사 모델 지원</h4>
+                  </div>
+                </li>
+                <li class="item_box">
+                  <div class="item_box_container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                      />
+                    </svg>
+                    <h4>모바일 지원</h4>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-        <div class="inquery_icon" id="inquery_icon">
-
-        </div>
+      </div>
     </div>
     <footer>
-        <div class="footer_company_info_first_box">
-            <p>지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 : 이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849</p>
-        </div>
-        <div class="footer_company_info_second_box">
-            <p>Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호</p>
-        </div>
-        <div class="footer_company_info_third_box">
-            <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
-            <p>Copyright (c) Since 2024. All rights reserved</p>
-        </div>
+      <div class="footer_company_info_first_box">
+        <p>
+          지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 :
+          이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849
+        </p>
+      </div>
+      <div class="footer_company_info_second_box">
+        <p>
+          Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호
+        </p>
+      </div>
+      <div class="footer_company_info_third_box">
+        <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
+        <p>Copyright (c) Since 2024. All rights reserved</p>
+      </div>
     </footer>
-    <script type="text/javascript" src="resources/js/inquery.js"></script>
-    
-</body>
+    <script type="text/javascript" src="resources/js/header.js"></script>
+  </body>
 </html>
