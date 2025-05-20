@@ -125,7 +125,7 @@
   }
 
   .header_section .navbar_list .nav_item:nth-child(2) .snap_box {
-    width: 50%;
+    width: 70%;
     display:flex;
   }
 
@@ -135,10 +135,11 @@
     flex-wrap: wrap;
     padding:10px;
     list-style: none;
+    justify-content: center;
   }
 
   .header_section .navbar_list .nav_item:nth-child(2) .snap_box .snap_list .snap_item_box {
-    width:50%;
+    width:25%;
     padding:5px;
   }
 
@@ -151,7 +152,7 @@
     display:flex;
     flex-direction: column;
     color:#000;
-    padding:20px;
+    padding:10px 20px;
   }
 
   .header_section .navbar_list .nav_item.catalog_item {

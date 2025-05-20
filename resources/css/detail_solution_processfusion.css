@@ -206,7 +206,7 @@
     max-width:150px;
 }
 
-.content_body_left_btn_box .demo_btn_box button {
+.content_body_left_btn_box .demo_btn_box a {
     flex:1;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
@@ -217,16 +217,19 @@
     color:#fff;
     background-color:#0dbdb3;
     cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.content_body_left_btn_box .demo_btn_box button:hover {
+.content_body_left_btn_box .demo_btn_box a:hover {
     color:rgb(13, 189, 179);
     background-color:#fff;
     transform: translateY(-7px);
     box-shadow: 0px 8px 15px rgba(13, 189, 179, 0.4);
 }
 
-.content_body_left_btn_box .download_btn_box button {
+.content_body_left_btn_box .download_btn_box a {
     flex:1;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
@@ -237,9 +240,12 @@
     color:#fff;
     background-color:#4acbfe;
     cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.content_body_left_btn_box .download_btn_box button:hover {
+.content_body_left_btn_box .download_btn_box a:hover {
     background-color: #fff;
     box-shadow: 0px 15px 20px rgba(74, 203, 254, 0.4);
     color: rgb(74, 203, 254);

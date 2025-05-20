@@ -13,85 +13,146 @@
 </head>
 <body>
     <div class="main_section">
-        <header class="header_section">
-            <nav class="navbar">
-                <div class="logo_section">
-                    <a class="logo_container" href="index.html">
-                        <div class="logo_box">
-                            <div class="logo_img"></div>
+         <header class="header_section">
+        <nav class="navbar">
+          <div class="logo_section">
+            <a class="logo_container" href="index.html">
+              <div class="logo_box">
+                <div class="logo_img"></div>
+              </div>
+              <h6 class="logo">ziewise</h6>
+            </a>
+          </div>
+          <div class="burger_box">
+            <svg id="ham" class="ham" viewBox="0 0 100 100" width="80">
+              <path
+                class="line top"
+                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+              />
+              <path class="line middle" d="m 30,50 h 40" />
+              <path
+                class="line bottom"
+                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+              />
+            </svg>
+          </div>
+          <div id="navigation_section" class="navigation_section">
+            <ul class="navbar_list">
+              <li class="nav_item">
+                <a href="about_business.html">기업소개</a>
+              </li>
+              <li class="nav_item">
+                <a>솔루션</a>
+                <div class="nav_item_snap">
+                  <div class="snap_box">
+                    <ul class="snap_list">
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_PF.html">Process Fusion</a>
+                          </h3>
+                          <p>모든 프린터에 구현가능한 보안 프린팅 솔루션</p>
                         </div>
-                        <h6 class="logo">
-                            ziewise
-                        </h6>
-                    </a>
-                </div>
-                <div class="navigation_section">
-                    <ul class="navbar_list">
-                        <li class="nav_item">
-                            <a href="about_business.html">기업소개</a>
-                        </li>
-                        <li class="nav_item">
-                            <a>솔루션</a>
-                            <div class="nav_item_snap">
-                                <div class="snap_box">
-                                    <ul class="snap_list">
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3><a href="detail_solution_PF.html">Process Fusion</a></h3>
-                                                <p>모든 프린터에 구현가능한 보안 프린팅 솔루션</p>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3><a href="detail_solution_smartCCTV.html">이동형 스마트 CCTV</a></h3>
-                                                <p>산업 재해 예방을 위한 솔루션</p>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3>SaaS 솔루션</h3>
-                                                <ul class="sub_snap_item_list">
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_DRM.html">DRM/DLP</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_VPC.html">VPC</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="snap_item_box">
-                                            <div class="snap_item">
-                                                <h3>IT Infra 서비스</h3>
-                                                <ul class="sub_snap_item_list">
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_zabbix.html">Zabbix 모니터링</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_infraHosting.html">IT 인프라 호스팅</a>
-                                                    </li>
-                                                    <li class="sub_item">
-                                                        <a href="detail_solution_infraBuildUp.html">IT 인프라 구축</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav_item">
-                            <a>고객문의</a>
-                        </li>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_smartCCTV.html"
+                              >이동형 스마트 CCTV</a
+                            >
+                          </h3>
+                          <p>산업 재해 예방을 위한 솔루션</p>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_DRM.html">DRM/DLP</a>
+                          </h3>
+                          <p>안전하게 데이터를 지키는 솔루션</p>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_VPC.html">VPC</a>
+                          </h3>
+                          <p>언제 어디서나 접속 가능한 가상 PC 솔루션</p>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_zabbix.html">Zabbix</a>
+                          </h3>
+                          <p>실시간 IT 모니터링 솔루션</p>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_infraHosting.html"
+                              >IT 인프라 호스팅</a
+                            >
+                          </h3>
+                          <p>유연하게 IT 인프라 자원을 사용해보세요!</p>
+                        </div>
+                      </li>
+                      <li class="snap_item_box">
+                        <div class="snap_item">
+                          <h3>
+                            <a href="detail_solution_infraBuildUp.html"
+                              >IT 인프라 구축</a
+                            >
+                          </h3>
+                          <p>IT 인프라 설계와 구축을 한 번에!</p>
+                        </div>
+                      </li>
                     </ul>
+                  </div>
                 </div>
-                <div class="lang_section">
-                    <div class="lang_section_box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    </div>
-                </div>
-            </nav>
-        </header>
+              </li>
+              <li class="nav_item">
+                <a href="inquery_page.html">고객문의</a>
+              </li>
+              <li class="nav_item catalog_item">
+                <a
+                  href="resources/files/Ziewise_main_solution_highlight.pdf"
+                  download
+                  >카탈로그 다운로드</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="lang_section">
+            <div class="lang_section_box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="language_icon"
+                width="42"
+                height="42"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-globe"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+            </div>
+            <ul id="language_list" class="language_list">
+              <li class="language_item">KR</li>
+              <li class="language_item">EN</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
         <div class="content_section">
             <div class="text_content_section">
                 <div class="text_box">

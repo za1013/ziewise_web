@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>(주)지와이즈</title>
     <link href="resources/css/default.css" rel="stylesheet" />
     <link href="resources/css/header.css" rel="stylesheet" />
-    <link href="resources/css/about_business.css" rel="stylesheet" />
+    <link href="resources/css/inquery_page.css" rel="stylesheet" />
     <link rel="icon" href="resources/images/ziewise_logo.ico" />
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-</head>
-<body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
     <div class="main_section">
-        <header class="header_section">
+      <header class="header_section">
         <nav class="navbar">
           <div class="logo_section">
             <a class="logo_container" href="index.html">
@@ -153,65 +155,144 @@
           </div>
         </nav>
       </header>
-        <div class="content_section" id="content_section">
-                <div class="content_background content_background_first">
-                </div>
-                <div class="content_body">
-                    <div class="main_text_box">
-                        <div id="main_text">
-                            <h2 class="title_text" id="title_text">기업 소개</h2>
-                            <p class="sub_text" id="sub_text">지와이즈는 다양한 기업 고객에게 안정적이고 효율적인 디지털 환경을 제공합니다.</p>
-                        </div>
-                    </div>
-                    <ul class="item_list">
-                        <li class="item_box">
-                            <div class="item_img"></div>
-                            <div class="item_text_box">
-                                <h2 class="item_text_title">기업 소개</h2>
-                                <p class="item_text_subtitle">지와이즈는 다양한 기업 고객에게 안정적이고 효율적인 디지털 환경을 제공합니다.</p>
-                            </div>
-                        </li>
-                        <li class="item_box">
-                            <div class="item_img"></div>
-                            <div class="item_text_box">
-                                <h2 class="item_text_title">환경을 생각하는 기업</h2>
-                                <p class="item_text_subtitle">지와이즈는 기술 혁신 뿐만 아니라, 지속 가능한 미래를 위해 환경을 고려한 경영을 실천하는 기업 입니다.</p>
-                            </div>
-                        </li>
-                        <li class="item_box">
-                            <div class="item_img"></div>
-                            <div class="item_text_box">
-                                <h2 class="item_text_title">사업 비전</h2>
-                                <p class="item_text_subtitle">지와이즈는 효율적인 IT 인프라 구축을 통해서, 고객의 업무 환경을 개선하는 것을 단기 목표로 설정하였습니다.<br/>
-                                    ERP, MES, SCADA와 같은 대규모 시스템 구축을 통해서 경쟁력을 갖추도록 하겠습니다.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="item_box">
-                            <div class="item_img"></div>
-                            <div class="item_text_box">
-                                <h2 class="item_text_title">기업 성과</h2>
-                                <p class="item_text_subtitle">지와이즈는 2024년 99.8% 시스템 가동 시간 및 높은 사용자 만족도를 달성하였습니다.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+      <div class="content_section demo_theme">
+        <div class="content_box">
+          <div class="content_left_box">
+            <div class="content_left_bg">
+              <h3 class="content_left_contact_text">PF360 데모 신청</h3>
             </div>
+          </div>
+          <div class="content_right_box">
+            <form class="content_right_form" id="demo_form">
+              <div class="group">
+                <input
+                  id="demo_name"
+                  name="name"
+                  type="text"
+                  required
+                  placeholder=""
+                />
+                <span class="bar"></span>
+                <label>이름</label>
+              </div>
+              <div class="group">
+                <input
+                  id="demo_company"
+                  name="company"
+                  type="text"
+                  required
+                  placeholder=""
+                />
+                <span class="bar"></span>
+                <label>회사명</label>
+              </div>
+              <div class="group">
+                <input
+                  id="demo_mail"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder=""
+                />
+                <span class="bar"></span>
+                <label>메일주소</label>
+              </div>
+              <div class="group select">
+                <select id="demo_users" name="users" required>
+                  <option value="0">사원 수 선택</option>
+                  <option value="5">5인 미만</option>
+                  <option value="50">5인 ~ 50인</option>
+                  <option value="100">51인 ~ 100인</option>
+                  <option value="300">101인 ~ 300인</option>
+                  <option value="500">301인 ~ 500인</option>
+                  <option value="1000">501인 ~ 1000인</option>
+                  <option value="1001">1001인 이상</option>
+                </select>
+                <label
+                  >사원수<span class="user_warning"
+                    >&nbsp;*선택해주세요.</span
+                  ></label
+                >
+              </div>
+              <div class="group select">
+                <select id="demo_printers" name="printers" required>
+                  <option value="0">프린터 수 선택</option>
+                  <option value="5">5대 미만</option>
+                  <option value="15">5대 ~ 15대</option>
+                  <option value="30">16대 ~ 30대</option>
+                  <option value="50">31대 ~ 50대</option>
+                  <option value="100">51대 ~ 100대</option>
+                  <option value="101">101대 이상</option>
+                </select>
+                <label
+                  >프린터 수
+                  <span class="printer_warning"
+                    >&nbsp;*선택해주세요.</span
+                  ></label
+                >
+              </div>
+              <button class="submit_btn" type="submit">문의 하기</button>
+              <a
+                class="catalog_btn"
+                href="resources/files/ziewise_PF360_catalog.pdf"
+                download
+              >
+                카탈로그 다운로드
+              </a>
+            </form>
+            <h3 class="company_contact_info">지와이즈 문의 연락처</h3>
+            <p class="company_call_info">02-2088-0741</p>
+            <p class="company_mail_info">info@ziewise.com</p>
+            <div class="success_msg_box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="200px"
+                height="200px"
+                viewBox="0 0 48 48"
+                fill="none"
+              >
+                <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+                <path
+                  d="M24 4L29.2533 7.83204L35.7557 7.81966L37.7533 14.0077L43.0211 17.8197L41 24L43.0211 30.1803L37.7533 33.9923L35.7557 40.1803L29.2533 40.168L24 44L18.7467 40.168L12.2443 40.1803L10.2467 33.9923L4.97887 30.1803L7 24L4.97887 17.8197L10.2467 14.0077L12.2443 7.81966L18.7467 7.83204L24 4Z"
+                  fill="#2F88FF"
+                  stroke="#000000"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 24L22 29L32 19"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h5>신청이 완료되었습니다.</h5>
+              <button id="success_box_close_btn">닫기</button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <footer>
-        <div class="footer_company_info_first_box">
-            <p>지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 : 이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849</p>
-        </div>
-        <div class="footer_company_info_second_box">
-            <p>Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호</p>
-        </div>
-        <div class="footer_company_info_third_box">
-            <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
-            <p>Copyright (c) Since 2024. All rights reserved</p>
-        </div>
+      <div class="footer_company_info_first_box">
+        <p>
+          지와이즈 주식회사&nbsp;&nbsp;&nbsp;대표이사 :
+          이승현&nbsp;&nbsp;&nbsp;사업자등록번호: 392-87-02849
+        </p>
+      </div>
+      <div class="footer_company_info_second_box">
+        <p>
+          Address. 서울특별시 금천구 가산디지털2로 165 백상스타타워2차 1206호
+        </p>
+      </div>
+      <div class="footer_company_info_third_box">
+        <p>Tel. 02-2088-0741&nbsp;&nbsp;&nbsp;E-mail. info@ziewise.com</p>
+        <p>Copyright (c) Since 2024. All rights reserved</p>
+      </div>
     </footer>
     <script type="text/javascript" src="resources/js/header.js"></script>
-    <script  type="text/javascript" src="resources/js/about_business.js"></script>
-</body>
+    <script type="text/javascript" src="resources/js/demo_inquery.js"></script>
+  </body>
 </html>
