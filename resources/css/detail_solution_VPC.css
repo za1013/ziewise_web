@@ -66,11 +66,12 @@
 }
 
 .content_header .content_header_box .content_header_title_box h2 {
-    font-size:3rem;
+    font-size:5rem;
     animation:fadeInText 1.2s ease-out forwards;
 }
 
 .content_header .content_header_box .content_header_title_box p {
+    font-size:2.5rem;
     animation:fadeInText 1.2s ease-out forwards;
 }
 
@@ -89,6 +90,14 @@
 .content_header .content_header_box .content_header_container .content_header_contact_box svg {
     width: 26px;
     height: 26px;
+}
+
+.content_header .content_header_box .content_header_container .content_header_contact_box h4 {
+    font-size:2rem;
+}
+
+.content_header .content_header_box .content_header_container .content_header_contact_box p {
+    font-size:1.6rem;
 }
 
 .content_body {
@@ -201,24 +210,49 @@
 
 .content_body .content_body_box ul.item_list li.item_box .item_img_container:hover .item_img_box p {
     opacity: 1;
-    font-size:1rem;
+    font-size:1.6rem;
     translate: 0px 0px;
 }
 
 
 /* Table size */
 @media screen and (max-width:1280px){
+    .content_header .content_header_box .content_header_title_box h2 {
+        font-size:3.5rem;
+        animation:fadeInText 1.2s ease-out forwards;
+    }
 
-  
+    .content_header .content_header_box .content_header_title_box p {
+        font-size:2rem;
+        animation:fadeInText 1.2s ease-out forwards;
+    }
 }
 
 /* Mobile size */
 @media screen and (max-width: 768px){
+
+    .content_header .content_header_box .content_header_title_box h2 {
+        font-size:2.5rem;
+        animation:fadeInText 1.2s ease-out forwards;
+    }
+
+    .content_header .content_header_box .content_header_title_box p {
+        font-size:1.4rem;
+        animation:fadeInText 1.2s ease-out forwards;
+    }
     
     .content_body .content_body_box ul.item_list li.item_box {
         width: 100%;
         height:auto;
     }
+
+    .content_header .content_header_box .content_header_container .content_header_contact_box h4 {
+        font-size:1.6rem;
+    }
+
+    .content_header .content_header_box .content_header_container .content_header_contact_box p {
+        font-size:1.4rem;
+    } 
 
     .content_header .content_header_box .content_header_container .content_header_contact_box {
         flex-direction: column;
@@ -227,5 +261,9 @@
 
     .content_header .content_header_box .content_header_container .content_header_contact_box > div {
         padding: 0;
+    }
+
+    .content_body .content_body_box ul.item_list li.item_box .item_img_container:hover .item_img_box p {
+        font-size:1.6rem;
     }
 }

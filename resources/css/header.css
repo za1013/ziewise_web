@@ -240,19 +240,30 @@
     width: 60px;
     background-color:#fff;
     opacity: 0;
+    transition:all .7s;
+  }
+
+  .header_section .navbar .lang_section ul.language_list li.language_item:hover {
+    background-color:#5e5e5e;
+    color:#fff;
   }
 
   .header_section .navbar .lang_section ul.language_list li.language_item:nth-child(1) {
     transform: translateY(-100px);
-    transition:all 1s;
+    transition:transform .7s;
   }
 
   .header_section .navbar .lang_section ul.language_list li.language_item:nth-child(2) {
     transform: translateY(-100px);
-    transition:all 1s .5s;
+    transition:transform .7s .5s;
   }
 
-  .header_section .navbar .lang_section ul.language_list.active li.language_item {
+  .header_section .navbar .lang_section .lang_section_box:hover + ul.language_list li.language_item {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .header_section .navbar .lang_section ul.language_list:hover li.language_item {
     transform: translateY(0);
     opacity: 1;
   }
