@@ -240,7 +240,7 @@
     width: 60px;
     background-color:#fff;
     opacity: 0;
-    transition:all .7s;
+    transition:opacity .7s;
   }
 
   .header_section .navbar .lang_section ul.language_list li.language_item:hover {
@@ -248,23 +248,19 @@
     color:#fff;
   }
 
-  .header_section .navbar .lang_section ul.language_list li.language_item:nth-child(1) {
-    transform: translateY(-100px);
-    transition:transform .7s;
-  }
-
-  .header_section .navbar .lang_section ul.language_list li.language_item:nth-child(2) {
-    transform: translateY(-100px);
-    transition:transform .7s .5s;
+  .header_section .navbar .lang_section .lang_section_box:hover + ul.language_list {
+    transform:translateY(0);
   }
 
   .header_section .navbar .lang_section .lang_section_box:hover + ul.language_list li.language_item {
-    transform: translateY(0);
     opacity: 1;
   }
 
+  .header_section .navbar .lang_section ul.language_list:hover {
+    transform:translateY(0);
+  }
+
   .header_section .navbar .lang_section ul.language_list:hover li.language_item {
-    transform: translateY(0);
     opacity: 1;
   }
 
