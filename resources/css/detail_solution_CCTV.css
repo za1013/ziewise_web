@@ -53,6 +53,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
 }
 
 .content_header .content_header_box .content_header_title_box h2.content_title {

@@ -6,10 +6,7 @@
     <title>(주)지와이즈</title>
     <link href="resources/css/default.css" rel="stylesheet" />
     <link href="resources/css/header.css" rel="stylesheet" />
-    <link
-      href="resources/css/detail_solution_infraBuildUp.css"
-      rel="stylesheet"
-    />
+    <link href="resources/css/inquery_page.css" rel="stylesheet" />
     <link rel="icon" href="resources/images/ziewise_logo.ico" />
     <script
       type="text/javascript"
@@ -18,7 +15,7 @@
   </head>
   <body>
     <div class="main_section">
-     <header class="header_section">
+      <header class="header_section">
         <nav class="navbar">
           <div class="logo_section">
             <a class="logo_container" href="index.html">
@@ -153,90 +150,105 @@
             </div>
             <ul id="language_list" class="language_list">
               <li class="language_item active">KR</li>
-              <li class="language_item"><a href="detail_solution_infraBuildUp_EN.html">EN</a></li>
+              <li class="language_item"><a href="inquiry_page_EN.html">EN</a></li>
             </ul>
           </div>
         </nav>
       </header>
       <div class="content_section">
-        <div class="content_section_bg">
-          <div class="bg_img"></div>
-        </div>
-        <div class="content_body">
-          <div class="content_body_text_box">
-            <h3 class="content_title">IT 인프라 구축 서비스</h3>
-            <p class="content_subtitle">
-              고객의 비즈니스 목표와 요구사항에 맞춘 맞춤형 IT 인프라 구축
-              서비스를 제공합니다.
-            </p>
+        <div class="content_box">
+          <div class="content_left_box">
+            <div class="content_left_bg">
+              <h3 class="content_left_contact_text">Contact Us</h3>
+            </div>
+          </div>
+          <div class="content_right_box">
+            <form class="content_right_form" id="inquery_form">
+              <div class="group">
+                <input
+                  type="text"
+                  name="name"
+                  id="inquery_name"
+                  required
+                  placeholder=""
+                />
+                <span class="bar"></span>
+                <label>이름</label>
+              </div>
+              <div class="group">
+                <input
+                  type="text"
+                  name="company"
+                  id="inquery_company"
+                  required
+                  placeholder=""
+                />
+                <span class="bar"></span>
+                <label>회사명</label>
+              </div>
+              <div class="group">
+                <input
+                  type="email"
+                  name="email"
+                  id="inquery_email"
+                  required
+                  placeholder=""
+                />
+                <span class="bar"></span>
+                <label>메일주소</label>
+              </div>
+              <div class="group">
+                <textarea
+                  type="text"
+                  name="message"
+                  id="inquery_message"
+                  required
+                ></textarea>
+                <span class="bar"></span>
+                <label>문의 내용</label>
+              </div>
+              <button class="submit_btn" type="submit">문의 하기</button>
+              <a
+                class="catalog_btn"
+                href="resources/files/Ziewise_main_solution_highlight.pdf"
+                download
+              >
+                카탈로그 다운로드
+              </a>
+            </form>
+            <h3 class="company_contact_info">지와이즈 문의 연락처</h3>
+            <p class="company_call_info">02-2088-0741</p>
+            <p class="company_mail_info">info@ziewise.com</p>
+            <div class="success_msg_box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="200px"
+                height="200px"
+                viewBox="0 0 48 48"
+                fill="none"
+              >
+                <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+                <path
+                  d="M24 4L29.2533 7.83204L35.7557 7.81966L37.7533 14.0077L43.0211 17.8197L41 24L43.0211 30.1803L37.7533 33.9923L35.7557 40.1803L29.2533 40.168L24 44L18.7467 40.168L12.2443 40.1803L10.2467 33.9923L4.97887 30.1803L7 24L4.97887 17.8197L10.2467 14.0077L12.2443 7.81966L18.7467 7.83204L24 4Z"
+                  fill="#2F88FF"
+                  stroke="#000000"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 24L22 29L32 19"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h5>신청이 완료되었습니다.</h5>
+              <button id="success_box_close_btn">닫기</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="detail_content_section">
-      <div class="detail_content_container">
-        <div class="detail_content_text_box">
-          <h3 class="detail_content_title">
-            견고한 인프라는 모든 비즈니스 혁신의 시작입니다.
-          </h3>
-          <p class="detail_content_subtitle">
-            저희는 신뢰성과 확장성을 기반으로, 변화에 민첩하게 대응할 수 있는 IT
-            인프라를 설계하고 구축합니다.
-            <br />
-            지금의 필요를 넘어, 미래의 성장을 준비하는 인프라, 저희가 함께
-            만들어가겠습니다.
-          </p>
-        </div>
-        <ul class="item_list">
-          <li class="item_container">
-            <div class="item_box">
-              <div class="item_img_box"></div>
-              <div class="item_text_box">
-                <h3>서버 및 스토리지 구축</h3>
-                <p>
-                  고성능 서버와 스토리지 솔루션을 통해, 안정적인 데이터 처리를
-                  확보합니다.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="item_container">
-            <div class="item_box">
-              <div class="item_img_box"></div>
-              <div class="item_text_box">
-                <h3>네트워크 인프라 설계</h3>
-                <p>
-                  기업 규모와 업무 특성에 맞는 네트워크 구조를 설계하여,
-                  효율적인 트래픽 처리가 가능한 인프라를 구축합니다.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="item_container">
-            <div class="item_box">
-              <div class="item_img_box"></div>
-              <div class="item_text_box">
-                <h3>보안 시스템 통합</h3>
-                <p>
-                  방화벽, IDS, IPS등 다양한 보안 솔루션을 통합하여, 종합적인
-                  보안 체계를 구축합니다.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="item_container">
-            <div class="item_box">
-              <div class="item_img_box"></div>
-              <div class="item_text_box">
-                <h3>가상화 및 컨테이너 환경 구축</h3>
-                <p>
-                  VMware, Hyper-V와 같은 기술을 통해, 보다 효율적인 자원 활용과
-                  관리를 가능하도록 지원합니다.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
     </div>
     <footer>
