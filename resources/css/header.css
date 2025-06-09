@@ -143,6 +143,10 @@
     padding:5px;
   }
 
+  .header_section .navbar_list .nav_item:nth-child(2) .snap_box .snap_list .snap_item_box:nth-child(7) {
+    width: 50%;
+  }
+
 
   .header_section .navbar_list .nav_item:nth-child(2) .snap_box .snap_list .snap_item_box .snap_item {
     width: 100%;
