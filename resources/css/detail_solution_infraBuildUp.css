@@ -102,6 +102,7 @@
 .detail_content_section .detail_content_container .detail_content_text_box h3.detail_content_title {
     font-size:3rem;
     color:#fff;
+    text-align:center;
 }
 
 .detail_content_section .detail_content_container .detail_content_text_box p.detail_content_subtitle {
