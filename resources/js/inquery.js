@@ -12,7 +12,7 @@ const successInfoBox = document.getElementById("success_info_box");
 const closeSuccessInfoBtn = document.getElementById("close_success_info_btn");
 const closeSuccessInfoIcon = document.getElementById("close_success_info_icon");
 
-const demo_form = document.getElementById("demo_form");
+// const demo_form = document.getElementById("demo_form");
 
 emailjs.init({
   publicKey: "pHteUwY88lk3RCqBZ",
@@ -90,18 +90,18 @@ closeInqueryIcon.addEventListener("click", () => {
   }
 });
 
-demo_form.addEventListener("submit", (e) => {
-  e.preventDefault();
+// demo_form.addEventListener("submit", (e) => {
+//   e.preventDefault();
 
-  const name_field = document.getElementById("demo_name");
-  const company_field = document.getElementById("company_field");
-  const email_field = document.getElementById("demo_mail");
-  const user_field = document.getElementById("demo_users");
-  const printer_field = document.getElementById("demo_printers");
+//   const name_field = document.getElementById("demo_name");
+//   const company_field = document.getElementById("company_field");
+//   const email_field = document.getElementById("demo_mail");
+//   const user_field = document.getElementById("demo_users");
+//   const printer_field = document.getElementById("demo_printers");
 
-  console.log(name_field.value);
-  console.log(company_field.value);
-  console.log(email_field.value);
-  console.log(user_field.value);
-  console.log(printer_field.value);
-});
+//   console.log(name_field.value);
+//   console.log(company_field.value);
+//   console.log(email_field.value);
+//   console.log(user_field.value);
+//   console.log(printer_field.value);
+// });
