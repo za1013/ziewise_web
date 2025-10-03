@@ -49,6 +49,10 @@
 }
 
 /* animations section end */
+
+  body {
+    overflow:hidden;
+  }
   
   #root, #app {
     isolation: isolate;
@@ -58,7 +62,6 @@
     display:flex;
     min-height:100vh;
     flex-direction:column;
-  
   }
 
   .content_section {
