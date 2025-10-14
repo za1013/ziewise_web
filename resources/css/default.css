@@ -17,6 +17,7 @@
     -webkit-font-smoothing: antialiased;
     font-family: system-ui, sans-serif;
     color:#fff;
+    overflow:hidden;
   }
   
   img, picture, video, canvas, svg {
